@@ -4,7 +4,109 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="235aaaf7-95b4-4fc8-8948-340649fab665" name="Changes" comment="start" />
+    <list default="true" id="235aaaf7-95b4-4fc8-8948-340649fab665" name="Changes" comment="start">
+      <change afterPath="$PROJECT_DIR$/res/Porsche_911_GT2.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/grass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/grassFlowers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/t1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tree.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial06/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial10/stall.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial10/stallTexture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial11/dragon.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial11/dragon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial13/box.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial13/box.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial14/grass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial14/grassFlowers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial14/tree.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial14/tree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial15/fern.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial15/fern.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial15/grassModel.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial15/grassTexture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial15/tree.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial15/tree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial17/blendMap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial17/flower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial17/grassFlowers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial17/grassy2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial17/lowPolyTree.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial17/lowPolyTree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial17/mud.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial17/path.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial18/stanfordBunny.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial18/white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tutorial21/heightmap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Camera.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Light.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/Keyboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/Mouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/RawModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/TexturedModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/render/DisplayManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/render/EntityRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/render/Loader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/render/MasterRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/render/OBJLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/render/TerrainRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/shaders/ShaderProgram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/shaders/StaticShader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/shaders/TerrainShader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/shaders/fragmentShader.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/shaders/terrainFragmentShader.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/shaders/terrainVertexShader.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/shaders/vertexShader.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/terrains/Terrain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/textures/ModelTexture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/textures/Texture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/toolbox/Maths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/engineTester/MainGameLoop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/entities/Camera.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/entities/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/entities/Light.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/io/Keyboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/io/Mouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/io/io/Keyboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/io/io/Mouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/io/models/RawModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/io/models/TexturedModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/models/RawModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/models/TexturedModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/renderEngine/DisplayManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/renderEngine/EntityRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/renderEngine/Loader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/renderEngine/MasterRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/renderEngine/OBJLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/renderEngine/TerrainRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/ShaderProgram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/StaticShader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/TerrainShader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/fragmentShader.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/shaders/ShaderProgram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/shaders/StaticShader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/shaders/TerrainShader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/shaders/fragmentShader.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/shaders/terrainFragmentShader.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/shaders/terrainVertexShader.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/shaders/vertexShader.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/terrainFragmentShader.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/terrainVertexShader.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/terrains/Terrain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/textures/ModelTexture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/textures/Texture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/toolbox/Maths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/vertexShader.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/terrains/Terrain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/textures/ModelTexture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/textures/Texture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/toolbox/Maths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/App.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +114,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="2YMQbBKvp9G6jZiZABW5IV5TnF6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -29,6 +130,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/neket/IdeaProjects/scene-in-LwjGL/res",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -36,6 +138,56 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/res" />
+      <recent name="$PROJECT_DIR$/src/main/java/tutorial14/renderEngine" />
+      <recent name="$PROJECT_DIR$/src/main/java/tutorial14/shaders" />
+      <recent name="$PROJECT_DIR$/src/main/java/tutorial14/io" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/res" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="render" />
+      <recent name="entities" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="app.App" />
+      <module name="scene-in-LwjGL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainGameLoop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tutorial14.engineTester.MainGameLoop" />
+      <module name="scene-in-LwjGL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tutorial14.engineTester.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.MainGameLoop" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -44,7 +196,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700333040604</updated>
-      <workItem from="1700333041643" duration="1255000" />
+      <workItem from="1700333041643" duration="15658000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -54,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700334221736</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="start">
+      <option name="closed" value="true" />
+      <created>1700334378012</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700334378012</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
