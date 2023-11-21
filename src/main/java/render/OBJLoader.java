@@ -1,11 +1,16 @@
 package render;
 
+import de.javagl.obj.Obj;
+import de.javagl.obj.ObjData;
+import de.javagl.obj.ObjUtils;
 import models.RawModel;
 import org.joml.Vector2f;
 import org.joml.Vector3f;
 
 
 import java.io.*;
+import java.nio.FloatBuffer;
+import java.nio.IntBuffer;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -110,8 +115,20 @@ public class OBJLoader {
         for (int i = 0; i < indices.size(); i++) {
             indicesArray[i] = indices.get(i);
         }
-
+System.out.println(verticesArray.length);
         return loader.loadToVao(verticesArray, texturesArray, normalsArray, indicesArray);
+    }
+
+
+    public RawModel loadObjModel(Obj obj, Loader loader){
+        obj = ObjUtils.convertToRenderable(obj);
+        IntBuffer indices = ObjData.getFaceVertexIndices(obj, 3);
+        FloatBuffer vertices = ObjData.getVertices(obj);
+        FloatBuffer texCoords = ObjData.getTexCoords(obj, 2);
+        FloatBuffer normals = ObjData.getNormals(obj);
+
+
+        return  loader.loadToVao(vertices.array(),texCoords.array(),normals.array(),indices.array());
     }
 
     /**

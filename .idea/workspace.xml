@@ -4,108 +4,97 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="235aaaf7-95b4-4fc8-8948-340649fab665" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/res/Porsche_911_GT2.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/grass.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/grassFlowers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/t1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tree.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tree.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial06/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial10/stall.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial10/stallTexture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial11/dragon.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial11/dragon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial13/box.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial13/box.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial14/grass.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial14/grassFlowers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial14/tree.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial14/tree.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial15/fern.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial15/fern.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial15/grassModel.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial15/grassTexture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial15/tree.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial15/tree.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial17/blendMap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial17/flower.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial17/grassFlowers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial17/grassy2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial17/lowPolyTree.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial17/lowPolyTree.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial17/mud.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial17/path.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial18/stanfordBunny.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial18/white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tutorial21/heightmap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Camera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Light.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/Keyboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/Mouse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/RawModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/TexturedModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/render/DisplayManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/render/EntityRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/render/Loader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/render/MasterRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/render/OBJLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/render/TerrainRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shaders/ShaderProgram.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shaders/StaticShader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shaders/TerrainShader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shaders/fragmentShader.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shaders/terrainFragmentShader.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shaders/terrainVertexShader.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shaders/vertexShader.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/terrains/Terrain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/textures/ModelTexture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/textures/Texture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/toolbox/Maths.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/engineTester/MainGameLoop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/entities/Camera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/entities/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/entities/Light.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/io/Keyboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/io/Mouse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/io/io/Keyboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/io/io/Mouse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/io/models/RawModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/io/models/TexturedModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/models/RawModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/models/TexturedModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/renderEngine/DisplayManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/renderEngine/EntityRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/renderEngine/Loader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/renderEngine/MasterRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/renderEngine/OBJLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/renderEngine/TerrainRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/ShaderProgram.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/StaticShader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/TerrainShader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/fragmentShader.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/shaders/ShaderProgram.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/shaders/StaticShader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/shaders/TerrainShader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/shaders/fragmentShader.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/shaders/terrainFragmentShader.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/shaders/terrainVertexShader.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/shaders/vertexShader.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/terrainFragmentShader.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/terrainVertexShader.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/terrains/Terrain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/textures/ModelTexture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/textures/Texture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/toolbox/Maths.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/vertexShader.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/terrains/Terrain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/textures/ModelTexture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/textures/Texture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial14/toolbox/Maths.java" afterDir="false" />
+    <list default="true" id="235aaaf7-95b4-4fc8-8948-340649fab665" name="Changes" comment="in work">
+      <change afterPath="$PROJECT_DIR$/House01.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/00_MyCust_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/00_TaME_Bronze02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/00_TaME_MetalBrushedDark01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Arch_Element_DoorImage01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/BlueRidge.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Concrete_Salt.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Copper01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Dried_Bamboo_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Fencing_Diamond_Mesh3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Groundcover_Gravel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/H1424_ST22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/H1615_ST9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/ILCampo-SantaFe-I.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Material3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Metal_Brass_Ceiling_Squares.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Metal_BrushedDark01a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Metal_Corrogated_Shiny.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Roofing_Shingles_Wood.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/SUC_Floor_004.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/SUC_Floor_023.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Stone_Flagstone_Ashlar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Stone_Tile_Squares1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Stone_Vein_Small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Texture_Stucco36.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Tile_Border_Travertine.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Tile_Diamond_Marble.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Tile_Granite_Multi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Tile_Granite_MultiBrown2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Tile_Radial_Gray.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Translucent_Glass_Safety.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Vegetation_IcePlant_Flower.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Vegetation_Impatiens_Pink.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Vegetation_Impatiens_Red.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Vegetation_Ivy_Hedera.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Vegetation_Lobelia.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Vegetation_Pansies.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Vegetation_Spirea.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Vegetation_Variegated1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Water_Pool_Light.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/Wood_Grain_Light3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/stainedglass05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/stainedglass12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House01_Textures/suc-grass-009.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/simpleSample.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/simpleSample.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/simpleSample_written.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Audi_R8_2017.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Audi_R8_2017.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/briks_1.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/briks_1_bump.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/briks_1_spec.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/creat_beton_2.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/creat_beton_2_normal.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/creat_beton_2_spec.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/creat_beton_3.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/creat_beton_3_normal.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/creat_beton_3_spec.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/garage.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/garage.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_1.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_1_bamp.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_1_spec.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_3.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_3_bamp.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_3_spec.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_4.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_4_bamp.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_4_spec.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_5.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_5_bamp.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_5_spec.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_6.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_6_bamp.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_6_spec.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/a1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/a2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/a3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/bugatti.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/garage.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/t2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/render/OBJLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/render/OBJLoader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +119,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/neket/IdeaProjects/scene-in-LwjGL/res",
+    "last_opened_file_path": "/home/neket/IdeaProjects/scene-in-LwjGL",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -140,13 +129,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/res" />
-      <recent name="$PROJECT_DIR$/src/main/java/tutorial14/renderEngine" />
-      <recent name="$PROJECT_DIR$/src/main/java/tutorial14/shaders" />
-      <recent name="$PROJECT_DIR$/src/main/java/tutorial14/io" />
-      <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$/res/Garage/GarageOBJ" />
+      <recent name="$PROJECT_DIR$/res/Garage/3D Model -  Garage - OBJ" />
+      <recent name="$PROJECT_DIR$/res/Garage" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/res" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -196,7 +186,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700333040604</updated>
-      <workItem from="1700333041643" duration="15658000" />
+      <workItem from="1700333041643" duration="44216000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -214,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700334378012</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="in work">
+      <option name="closed" value="true" />
+      <created>1700476471199</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700476471199</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,6 +232,17 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="start" />
-    <option name="LAST_COMMIT_MESSAGE" value="start" />
+    <MESSAGE value="in work" />
+    <option name="LAST_COMMIT_MESSAGE" value="in work" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.UnsupportedOperationException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
