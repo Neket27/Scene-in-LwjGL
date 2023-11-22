@@ -4,50 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="235aaaf7-95b4-4fc8-8948-340649fab665" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/res/Audi/3D Models/Audi_R8_2017.blend" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Audi/3D Models/Audi_R8_2017.blend1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Audi/3D Models/Audi_R8_2017.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Audi/3D Models/Audi_R8_2017.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Audi/3D Models/Audi_R8_2017.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Audi/3D Models/Audi_R8_2017.stl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Audi/3D Models/Audi_R8_20172.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Audi/Renders/Audi_R8_2017.1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Audi/Renders/Audi_R8_2017.100001.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Audi/Renders/Audi_R8_2017.110001.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Audi/Renders/Audi_R8_2017.2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Audi/Renders/Audi_R8_2017.5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Audi/Renders/Audi_R8_2017.9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Audi/Renders/Audi_R8_2017.9black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Audi/Textures/39034792-automobile-braking-system-aeration-steel-brake-disk-with-perforation-and-red-six-pistons-calipers-an.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Audi/Textures/Car.Brake-Disk.BMP.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Audi/Textures/NumernSchildAudiR8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Audi/Textures/Tyre.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/Beige.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/Jade.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/M_47in_TV_Front.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/M_47in_TV_Front1_.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/M_47in_TV_Front2_.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/M_59_4_.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/M_59_4_1_.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/M_59_4_2_.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/Metal_Corrogated_Shiny.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/Side.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/White_Tiger__10_.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/Wood__Floor.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/e60m5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/grill.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/ntkuw5kj.bmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/nuvi_screenshot.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Mustang.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/double_garage.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/double_garage.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/garage2020.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/App.java" afterDir="false" />
-    </list>
+    <list default="true" id="235aaaf7-95b4-4fc8-8948-340649fab665" name="Changes" comment="." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,7 +95,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700333040604</updated>
-      <workItem from="1700333041643" duration="55617000" />
+      <workItem from="1700333041643" duration="55997000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -172,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700602384883</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=".">
+      <option name="closed" value="true" />
+      <created>1700687219040</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700687219040</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
