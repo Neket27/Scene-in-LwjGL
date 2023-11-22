@@ -4,97 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="235aaaf7-95b4-4fc8-8948-340649fab665" name="Changes" comment="in work">
-      <change afterPath="$PROJECT_DIR$/House01.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/00_MyCust_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/00_TaME_Bronze02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/00_TaME_MetalBrushedDark01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Arch_Element_DoorImage01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/BlueRidge.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Concrete_Salt.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Copper01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Dried_Bamboo_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Fencing_Diamond_Mesh3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Groundcover_Gravel.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/H1424_ST22.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/H1615_ST9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/ILCampo-SantaFe-I.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Material3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Metal_Brass_Ceiling_Squares.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Metal_BrushedDark01a.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Metal_Corrogated_Shiny.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Roofing_Shingles_Wood.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/SUC_Floor_004.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/SUC_Floor_023.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Stone_Flagstone_Ashlar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Stone_Tile_Squares1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Stone_Vein_Small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Texture_Stucco36.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Thumbs.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Tile_Border_Travertine.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Tile_Diamond_Marble.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Tile_Granite_Multi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Tile_Granite_MultiBrown2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Tile_Radial_Gray.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Translucent_Glass_Safety.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Vegetation_IcePlant_Flower.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Vegetation_Impatiens_Pink.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Vegetation_Impatiens_Red.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Vegetation_Ivy_Hedera.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Vegetation_Lobelia.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Vegetation_Pansies.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Vegetation_Spirea.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Vegetation_Variegated1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Water_Pool_Light.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/Wood_Grain_Light3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/stainedglass05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/stainedglass12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/House01_Textures/suc-grass-009.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/simpleSample.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/simpleSample.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/simpleSample_written.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Audi_R8_2017.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Audi_R8_2017.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/briks_1.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/briks_1_bump.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/briks_1_spec.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/creat_beton_2.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/creat_beton_2_normal.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/creat_beton_2_spec.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/creat_beton_3.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/creat_beton_3_normal.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/creat_beton_3_spec.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/garage.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/garage.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_1.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_1_bamp.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_1_spec.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_3.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_3_bamp.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_3_spec.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_4.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_4_bamp.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_4_spec.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_5.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_5_bamp.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_5_spec.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_6.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_6_bamp.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/mtl_6_spec.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/a1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/a2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/a3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/bugatti.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/garage.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/t2.png" afterDir="false" />
+    <list default="true" id="235aaaf7-95b4-4fc8-8948-340649fab665" name="Changes" comment=".">
+      <change afterPath="$PROJECT_DIR$/res/Audi/3D Models/Audi_R8_2017.blend" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Audi/3D Models/Audi_R8_2017.blend1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Audi/3D Models/Audi_R8_2017.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Audi/3D Models/Audi_R8_2017.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Audi/3D Models/Audi_R8_2017.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Audi/3D Models/Audi_R8_2017.stl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Audi/3D Models/Audi_R8_20172.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Audi/Renders/Audi_R8_2017.1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Audi/Renders/Audi_R8_2017.100001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Audi/Renders/Audi_R8_2017.110001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Audi/Renders/Audi_R8_2017.2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Audi/Renders/Audi_R8_2017.5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Audi/Renders/Audi_R8_2017.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Audi/Renders/Audi_R8_2017.9black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Audi/Textures/39034792-automobile-braking-system-aeration-steel-brake-disk-with-perforation-and-red-six-pistons-calipers-an.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Audi/Textures/Car.Brake-Disk.BMP.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Audi/Textures/NumernSchildAudiR8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Audi/Textures/Tyre.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/Beige.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/Jade.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/M_47in_TV_Front.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/M_47in_TV_Front1_.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/M_47in_TV_Front2_.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/M_59_4_.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/M_59_4_1_.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/M_59_4_2_.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/Metal_Corrogated_Shiny.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/Side.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/White_Tiger__10_.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/Wood__Floor.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/e60m5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/grill.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/ntkuw5kj.bmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/nuvi_screenshot.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Mustang.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/double_garage.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/double_garage.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/garage2020.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/render/OBJLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/render/OBJLoader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +71,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/neket/IdeaProjects/scene-in-LwjGL",
+    "last_opened_file_path": "/home/neket/IdeaProjects/scene-in-LwjGL/res",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -129,11 +81,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/res" />
+      <recent name="$PROJECT_DIR$/res/Audi/3D Models" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/res/Garage/GarageOBJ" />
       <recent name="$PROJECT_DIR$/res/Garage/3D Model -  Garage - OBJ" />
-      <recent name="$PROJECT_DIR$/res/Garage" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -186,7 +138,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700333040604</updated>
-      <workItem from="1700333041643" duration="44216000" />
+      <workItem from="1700333041643" duration="55617000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -212,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700476471199</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=".">
+      <option name="closed" value="true" />
+      <created>1700602384883</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700602384883</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,7 +193,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="start" />
     <MESSAGE value="in work" />
-    <option name="LAST_COMMIT_MESSAGE" value="in work" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -52,12 +52,12 @@ public class App {
             String materialName = entry.getKey();
             Obj materialGroup = entry.getValue();
 
-            //System.out.println("Material name  : " + materialName);
-            //System.out.println("Material group : " + materialGroup);
+            System.out.println("Material name  : " + materialName);
+            System.out.println("Material group : " + materialGroup);
 
             // Find the MTL that defines the material with the current name
             Mtl mtl = findMtlForName(allMtls, materialName);
-
+          System.out.println("bump ="+  mtl.getBump());
             // Render the current material group with this material:
 
 
@@ -68,11 +68,11 @@ public class App {
             RawModel m2= loader.loadToVao(vertices,texCoords,normals,faceVertexIndices);
 //String name=mtl.getName();
             String name="res/Garage/GarageOBJ/mtl_4_spec.tga";
-            ModelTexture texture = new ModelTexture(loader.loadTexture(name));
+            ModelTexture texture = new ModelTexture(loader.loadTexture("res/Garage/GarageOBJ/"+mtl.getBump()));
             // Установка переменных блеска
             texture.setShineDamper(20);
             texture.setReflectivity(0f);
-            sendToRenderer(mtl, materialGroup);
+            //sendToRenderer(mtl, materialGroup);
 
             TexturedModel staticModel = new TexturedModel(m2, texture);
 
@@ -157,14 +157,34 @@ public class App {
 //        texture.setReflectivity(0f);
 
         // Создание текстурной модели
+        ModelTexture texture = new ModelTexture(loader.loadTexture("res/garage2020.png"));
+        // Установка переменных блеска
+        texture.setShineDamper(20);
+        texture.setReflectivity(0f);
+        //sendToRenderer(mtl, materialGroup);
+
+        InputStream objInputStream2 = new FileInputStream("res/Garage/GarageOBJ/garage.obj");
+        Obj obj2 = ObjReader.read(objInputStream2);
+        obj2 = ObjUtils.convertToRenderable(obj2);
+        faceVertexIndices = ObjData.getFaceVertexIndicesArray(obj2);
+        vertices = ObjData.getVerticesArray(obj2);
+        texCoords = ObjData.getTexCoordsArray(obj2, 2);
+        normals = ObjData.getNormalsArray(obj2);
+        RawModel m2= loader.loadToVao(vertices,texCoords,normals,faceVertexIndices);
+
+        TexturedModel staticModel = new TexturedModel(m2, texture);
+        Entity gr =new Entity(staticModel, new Vector3f(0,0,-15),0,0,0,3);
+        gr.increacePosition(0,2,0);
+        gr.increaseRotation(0,150,0);
+        entities.add(gr);
 
 
 
         // создание источника света
         Light light = new Light(new Vector3f(3000, 2000, 3000), new Vector3f(1, 1, 1));
 
-       Terrain terrain = new Terrain(0, -1, loader, new ModelTexture(loader.loadTexture("res/a3.png")));
-        Terrain terrain2 = new Terrain(-1, -1, loader, new ModelTexture(loader.loadTexture("res/a3.png")));
+       Terrain terrain = new Terrain(0, -1, loader, new ModelTexture(loader.loadTexture("res/tutorial14/grass.png")));
+        Terrain terrain2 = new Terrain(-1, -1, loader, new ModelTexture(loader.loadTexture("res/tutorial14/grass.png")));
 
         Camera camera = new Camera();
 
