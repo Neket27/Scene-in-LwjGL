@@ -6,6 +6,53 @@
   <component name="ChangeListManager">
     <list default="true" id="235aaaf7-95b4-4fc8-8948-340649fab665" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/render/EntityRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/render/EntityRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/render/MasterRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/render/MasterRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/shaders/StaticShader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shaders/StaticShader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/shaders/fragmentShader.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shaders/fragmentShader.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/shaders/vertexShader.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shaders/vertexShader.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/textures/ModelTexture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/textures/ModelTexture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/engineTester/MainGameLoop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/entities/Camera.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/entities/Entity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/entities/Light.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/io/Keyboard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/io/Mouse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/io/io/Keyboard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/io/io/Mouse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/io/models/RawModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/io/models/TexturedModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/models/RawModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/models/TexturedModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/renderEngine/DisplayManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/renderEngine/EntityRenderer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/renderEngine/Loader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/renderEngine/MasterRenderer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/renderEngine/OBJLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/renderEngine/TerrainRenderer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/ShaderProgram.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/StaticShader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/TerrainShader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/fragmentShader.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/shaders/ShaderProgram.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/shaders/StaticShader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/shaders/TerrainShader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/shaders/fragmentShader.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/shaders/terrainFragmentShader.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/shaders/terrainVertexShader.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/shaders/vertexShader.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/terrainFragmentShader.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/terrainVertexShader.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/terrains/Terrain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/textures/ModelTexture.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/textures/Texture.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/toolbox/Maths.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/shaders/vertexShader.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/terrains/Terrain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/textures/ModelTexture.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/textures/Texture.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial14/toolbox/Maths.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +99,7 @@
       <recent name="$PROJECT_DIR$/res" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="textures" />
       <recent name="render" />
       <recent name="entities" />
     </key>
@@ -98,7 +146,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700333040604</updated>
-      <workItem from="1700333041643" duration="56623000" />
+      <workItem from="1700333041643" duration="62707000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -148,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700687737563</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary=".">
+      <option name="closed" value="true" />
+      <created>1700688212676</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700688212676</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

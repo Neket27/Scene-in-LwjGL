@@ -163,7 +163,7 @@ public class App {
         texture.setReflectivity(0f);
         //sendToRenderer(mtl, materialGroup);
 
-        InputStream objInputStream2 = new FileInputStream("res/Garage/GarageOBJ/garage.obj");
+        InputStream objInputStream2 = new FileInputStream("res/double_garage.obj");
         Obj obj2 = ObjReader.read(objInputStream2);
         obj2 = ObjUtils.convertToRenderable(obj2);
         faceVertexIndices = ObjData.getFaceVertexIndicesArray(obj2);
@@ -173,7 +173,7 @@ public class App {
         RawModel m2= loader.loadToVao(vertices,texCoords,normals,faceVertexIndices);
 
         TexturedModel staticModel = new TexturedModel(m2, texture);
-        Entity gr =new Entity(staticModel, new Vector3f(0,0,-15),0,0,0,3);
+        Entity gr =new Entity(staticModel, new Vector3f(40,0,-15),0,0,0,3);
         gr.increacePosition(0,2,0);
         gr.increaseRotation(0,150,0);
         entities.add(gr);
@@ -190,6 +190,33 @@ public class App {
 
         MasterRenderer renderer = new MasterRenderer();
 
+
+
+        //////////сегодня
+        // Загрузка текстурных моделей
+// дерево
+        TexturedModel staticModelS = new TexturedModel(OBJLoader.loadObjModel("res/tutorial15/tree.obj", loader),
+                new ModelTexture(loader.loadTexture("res/tutorial15/tree.png")));
+// трава
+        TexturedModel grass = new TexturedModel(OBJLoader.loadObjModel("res/tutorial15/grassModel.obj", loader), new ModelTexture(
+                loader.loadTexture("res/tutorial15/grassTexture.png")));
+// папоротник
+        TexturedModel fern = new TexturedModel(OBJLoader.loadObjModel("res/tutorial15/fern.obj", loader), new ModelTexture(
+                loader.loadTexture("res/tutorial15/fern.png")));
+
+        grass.getTexture().setHasTransparency(true); // включаем прозрачность текстур
+        //grass.getTexture().setUseFakeLighting(true); // включаем фальшивое освещение
+
+        Random random = new Random();
+    for(int i=0;i<500;i++) {
+        entities.add(new Entity(staticModelS, new Vector3f(random.nextFloat() * 800 - 400, 0,
+                random.nextFloat() * -600), 0, 0, 0, 3));
+        entities.add(new Entity(grass, new Vector3f(random.nextFloat() * 800 - 400, 0,
+                random.nextFloat() * -600), 0, 0, 0, 1));
+        entities.add(new Entity(fern, new Vector3f(random.nextFloat() * 800 - 400, 0,
+                random.nextFloat() * -600), 0, 0, 0, 0.6f));
+
+    }
         // запускаем цикл пока пользователь не закроет окно
         while (DisplayManager.shouldDisplayClose()) {
             camera.move(); // двигаем камеру

@@ -111,7 +111,22 @@ public class MasterRenderer {
         GL11.glClear(GL11.GL_COLOR_BUFFER_BIT | GL11.GL_DEPTH_BUFFER_BIT); 
         GL11.glClearColor(0.51f, 0.71f, 0.87f, 0.0f); // Загрузка выбранного цвета в цветовой буфер
     }
-    
+
+    /**
+     * Включение отсечения невидимых задних поверхностей
+     */
+    public static void enableCulling(){
+      GL11.glEnable(GL11.GL_CULL_FACE);
+      GL11.glCullFace(GL11.GL_BACK);
+    }
+
+    /**
+     * Выключение отсечения невидимых задних поверхностей
+     */
+    public static void disableCulling() {
+        GL11.glDisable(GL11.GL_CULL_FACE);
+    }
+
     /**
      * Очистка данных
      */
