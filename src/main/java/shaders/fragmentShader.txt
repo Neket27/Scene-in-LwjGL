@@ -4,6 +4,7 @@ in vec2 pass_textureCoords; // текстурные координаты
 in vec3 surfaceNormal; // нормаль поверхности
 in vec3 toLightVector; // вектор направленный на источник света
 in vec3 toCameraVector; // вектор положения камеры
+in float visibility; // видимость вершины для тумана
 
 out vec4 fragColor;
 
@@ -11,6 +12,7 @@ uniform sampler2D textureSampler;
 uniform vec3 lightColour; // цвет источника света
 uniform float shineDamper; // коэффициент блеска материала
 uniform float reflectivity; // отражательная способность материала
+uniform vec3 skyColour; // цвет тумана/неба
 
 void main()
 {
@@ -42,6 +44,8 @@ void main()
     if(textureColour.a < 0.5) {
         discard; // запрещаем вывод пикселя
     }
-
+    
     fragColor = vec4(diffuse, 1.0) * textureColour + vec4(finalSpecular, 1.0);
+    // туман. Смешиваем 2 цвета с интенсивностью
+    fragColor = mix(vec4(skyColour,1.0),fragColor, visibility); 
 }

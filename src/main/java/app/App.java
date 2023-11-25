@@ -4,6 +4,7 @@ import de.javagl.obj.*;
 import entities.Camera;
 import entities.Entity;
 import entities.Light;
+import entities.Player;
 import models.RawModel;
 import models.TexturedModel;
 import org.joml.Vector3f;
@@ -13,6 +14,8 @@ import render.MasterRenderer;
 import render.OBJLoader;
 import terrains.Terrain;
 import textures.ModelTexture;
+import textures.TerrainTexture;
+import textures.TerrainTexturePack;
 
 
 import java.io.FileInputStream;
@@ -25,21 +28,49 @@ import java.util.*;
 
 public class App {
     public static void main(String[] args) throws IOException {
-       DisplayManager.createDisplay();
+        DisplayManager.createDisplay();
 
         Loader loader = new Loader(); // загрузчик моделей
+
+
+        // загрузка текстур ландшафта
+        TerrainTexture backgroundTexture = new TerrainTexture(loader.loadTexture("res/asphalt.png"));
+        TerrainTexture rTexture = new TerrainTexture(loader.loadTexture("res/a3.png"));
+        TerrainTexture gTexture = new TerrainTexture(loader.loadTexture("res/yellow.png")); //-
+        TerrainTexture bTexture = new TerrainTexture(loader.loadTexture("res/tutorial21/heightmap.png"));
+        TerrainTexturePack texturePack = new TerrainTexturePack(backgroundTexture, rTexture, gTexture, bTexture);
+// загрузка карты смешивания текстур ландшафта
+        TerrainTexture blendMap = new TerrainTexture(loader.loadTexture("res/mapForautoDrom3.png"));
+
+
+// Игрок
+
+        InputStream objInputStream2 = new FileInputStream("res/bugatti.obj");
+        Obj obj3 = ObjReader.read(objInputStream2);
+        obj3 = ObjUtils.convertToRenderable(obj3);
+        int[] faceVertexIndices3;
+        faceVertexIndices3 = ObjData.getFaceVertexIndicesArray(obj3);
+        float[] vertices3;
+        vertices3 = ObjData.getVerticesArray(obj3);
+        float[] texCoords3;
+        texCoords3 = ObjData.getTexCoordsArray(obj3, 2);
+        float[] normals3;
+        normals3 = ObjData.getNormalsArray(obj3);
+        RawModel m3 = loader.loadToVao(vertices3, texCoords3, normals3, faceVertexIndices3);
+
+
+        ModelTexture texture3 = new ModelTexture(loader.loadTexture("res/tutorial18/white.png"));
+        TexturedModel stanfordBunny = new TexturedModel(m3,texture3);
+
+        Player player = new Player(stanfordBunny, new Vector3f(100, 0, -50), 0, 0, 0, 1);
+
 
         InputStream objInputStream = new FileInputStream("res/Garage/GarageOBJ/garage.obj");
         Obj obj = ObjReader.read(objInputStream);
         obj = ObjUtils.convertToRenderable(obj);
-        int faceVertexIndices[];
-        float vertices[];
-        float texCoords[];
-        float normals[];
         List<Entity> entities = new ArrayList<>();
         List<Mtl> allMtls = new ArrayList<Mtl>();
-        for (String mtlFileName : obj.getMtlFileNames())
-        {
+        for (String mtlFileName : obj.getMtlFileNames()) {
             InputStream mtlInputStream =
                     new FileInputStream("res/Garage/GarageOBJ/" + mtlFileName);
             List<Mtl> mtls = MtlReader.read(mtlInputStream);
@@ -47,8 +78,11 @@ public class App {
         }
 
         Map<String, Obj> materialGroups = ObjSplitting.splitByMaterialGroups(obj);
-        for (Map.Entry<String, Obj> entry : materialGroups.entrySet())
-        {
+        int[] faceVertexIndices;
+        float[] vertices;
+        float[] texCoords;
+        float[] normals;
+        for (Map.Entry<String, Obj> entry : materialGroups.entrySet()) {
             String materialName = entry.getKey();
             Obj materialGroup = entry.getValue();
 
@@ -57,18 +91,18 @@ public class App {
 
             // Find the MTL that defines the material with the current name
             Mtl mtl = findMtlForName(allMtls, materialName);
-          System.out.println("bump ="+  mtl.getBump());
+            System.out.println("bump =" + mtl.getBump());
             // Render the current material group with this material:
 
 
             faceVertexIndices = ObjData.getFaceVertexIndicesArray(materialGroup);
-             vertices = ObjData.getVerticesArray(materialGroup);
-             texCoords = ObjData.getTexCoordsArray(materialGroup, 2);
-             normals = ObjData.getNormalsArray(materialGroup);
-            RawModel m2= loader.loadToVao(vertices,texCoords,normals,faceVertexIndices);
+            vertices = ObjData.getVerticesArray(materialGroup);
+            texCoords = ObjData.getTexCoordsArray(materialGroup, 2);
+            normals = ObjData.getNormalsArray(materialGroup);
+            RawModel m2 = loader.loadToVao(vertices, texCoords, normals, faceVertexIndices);
 //String name=mtl.getName();
-            String name="res/Garage/GarageOBJ/mtl_4_spec.tga";
-            ModelTexture texture = new ModelTexture(loader.loadTexture("res/Garage/GarageOBJ/"+mtl.getBump()));
+            String name = "res/Garage/GarageOBJ/mtl_4_spec.tga";
+            ModelTexture texture = new ModelTexture(loader.loadTexture("res/Garage/GarageOBJ/" + mtl.getBump()));
             // Установка переменных блеска
             texture.setShineDamper(20);
             texture.setReflectivity(0f);
@@ -77,10 +111,9 @@ public class App {
             TexturedModel staticModel = new TexturedModel(m2, texture);
 
 
-
-            Entity m =new Entity(staticModel, new Vector3f(0,0,-15),0,0,0,3);
-            m.increacePosition(0,2,0);
-            m.increaseRotation(0,150,0);
+            Entity m = new Entity(staticModel, new Vector3f(0, 0, -15), 0, 0, 0, 3);
+            m.increasePosition(0, 2, 0);
+            m.increaseRotation(0, 150, 0);
             entities.add(m);
         }
 
@@ -111,11 +144,11 @@ public class App {
 //       float[]n=toArrayFloat(normals,3);
 //       int[]i=toArrayFloat(indices,3);
 //RawModel m2= loader.loadToVao(vertices,texCoords,normals,faceVertexIndices);
-        float[] floatArray = new float[] { 3.4f, 3.5f, 3.6f, 3.7f, 3.8f, 3.1234f, 6.2344f, 8.34f, 9.8f };
+        float[] floatArray = new float[]{3.4f, 3.5f, 3.6f, 3.7f, 3.8f, 3.1234f, 6.2344f, 8.34f, 9.8f};
         FloatBuffer bb = FloatBuffer.wrap(floatArray);
         System.out.println(Arrays.toString(bb.array()));
 
-      //  System.out.println(indices.array().length);
+        //  System.out.println(indices.array().length);
 
 //        try {
 //            int capacity = 10;
@@ -149,7 +182,7 @@ public class App {
 
         // загружаем модель в память OpenGL
         RawModel model = OBJLoader.loadObjModel("res/tutorial14/tree.obj", loader);
-    //    RawModel model2 = OBJLoader.loadObjModel("res/Garage/GarageOBJ/garage.obj", loader);
+        //    RawModel model2 = OBJLoader.loadObjModel("res/Garage/GarageOBJ/garage.obj", loader);
         // загрузим текстуру используя загрузчик
 //       ModelTexture texture = new ModelTexture(loader.loadTexture("res/11.png"));
 //        // Установка переменных блеска
@@ -163,33 +196,31 @@ public class App {
         texture.setReflectivity(0f);
         //sendToRenderer(mtl, materialGroup);
 
-        InputStream objInputStream2 = new FileInputStream("res/double_garage.obj");
-        Obj obj2 = ObjReader.read(objInputStream2);
+        InputStream objInputStream3 = new FileInputStream("res/double_garage.obj");
+        Obj obj2 = ObjReader.read(objInputStream3);
         obj2 = ObjUtils.convertToRenderable(obj2);
         faceVertexIndices = ObjData.getFaceVertexIndicesArray(obj2);
         vertices = ObjData.getVerticesArray(obj2);
         texCoords = ObjData.getTexCoordsArray(obj2, 2);
         normals = ObjData.getNormalsArray(obj2);
-        RawModel m2= loader.loadToVao(vertices,texCoords,normals,faceVertexIndices);
+        RawModel m2 = loader.loadToVao(vertices, texCoords, normals, faceVertexIndices);
 
         TexturedModel staticModel = new TexturedModel(m2, texture);
-        Entity gr =new Entity(staticModel, new Vector3f(40,0,-15),0,0,0,3);
-        gr.increacePosition(0,2,0);
-        gr.increaseRotation(0,150,0);
+        Entity gr = new Entity(staticModel, new Vector3f(40, 0, -15), 0, 0, 0, 3);
+        gr.increasePosition(0, 2, 0);
+        gr.increaseRotation(0, 150, 0);
         entities.add(gr);
-
 
 
         // создание источника света
         Light light = new Light(new Vector3f(3000, 2000, 3000), new Vector3f(1, 1, 1));
 
-       Terrain terrain = new Terrain(0, -1, loader, new ModelTexture(loader.loadTexture("res/tutorial14/grass.png")));
-        Terrain terrain2 = new Terrain(-1, -1, loader, new ModelTexture(loader.loadTexture("res/tutorial14/grass.png")));
+        Terrain terrain = new Terrain(0, -1, loader, texturePack, blendMap);
+        Terrain terrain2 = new Terrain(-1, -1, loader, texturePack, blendMap);
 
-        Camera camera = new Camera();
+        Camera camera = new Camera(player);
 
         MasterRenderer renderer = new MasterRenderer();
-
 
 
         //////////сегодня
@@ -208,22 +239,24 @@ public class App {
         //grass.getTexture().setUseFakeLighting(true); // включаем фальшивое освещение
 
         Random random = new Random();
-    for(int i=0;i<500;i++) {
-        entities.add(new Entity(staticModelS, new Vector3f(random.nextFloat() * 800 - 400, 0,
-                random.nextFloat() * -600), 0, 0, 0, 3));
-        entities.add(new Entity(grass, new Vector3f(random.nextFloat() * 800 - 400, 0,
-                random.nextFloat() * -600), 0, 0, 0, 1));
-        entities.add(new Entity(fern, new Vector3f(random.nextFloat() * 800 - 400, 0,
-                random.nextFloat() * -600), 0, 0, 0, 0.6f));
+        for (int i = 0; i < 500; i++) {
+            entities.add(new Entity(staticModelS, new Vector3f(random.nextFloat() * 800 - 400, 0,
+                    random.nextFloat() * -600), 0, 0, 0, 3));
+            entities.add(new Entity(grass, new Vector3f(random.nextFloat() * 800 - 400, 0,
+                    random.nextFloat() * -600), 0, 0, 0, 1));
+            entities.add(new Entity(fern, new Vector3f(random.nextFloat() * 800 - 400, 0,
+                    random.nextFloat() * -600), 0, 0, 0, 0.6f));
 
-    }
+        }
         // запускаем цикл пока пользователь не закроет окно
         while (DisplayManager.shouldDisplayClose()) {
             camera.move(); // двигаем камеру
+            player.move(); // двигаем игрока
+            renderer.processEntity(player); // рисуем игрока
             // рисуем объекты
             renderer.processTerrain(terrain);
             renderer.processTerrain(terrain2);
-            for(Entity entity:entities){
+            for (Entity entity : entities) {
                 renderer.processEntity(entity);
             }
             renderer.render(light, camera);

@@ -39,7 +39,7 @@ public class Entity {
      * @param dy смещение по Y
      * @param dz смещение по Z
      */
-    public void increacePosition(float dx, float dy, float dz) {
+    public void increasePosition(float dx, float dy, float dz) {
         this.position.x += dx;
         this.position.y += dy;
         this.position.z += dz;

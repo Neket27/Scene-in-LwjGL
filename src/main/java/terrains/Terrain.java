@@ -2,7 +2,8 @@ package terrains;
 
 import models.RawModel;
 import render.Loader;
-import textures.ModelTexture;
+import textures.TerrainTexture;
+import textures.TerrainTexturePack;
 
 /**
  * Класс который представляет ландшафт в нашей игре
@@ -19,17 +20,21 @@ public class Terrain {
     private float z;
     
     private RawModel model; // сетка ландшафта
-    private ModelTexture texture; // текстура ландшафта
+    private TerrainTexturePack texturePack; // пак текстур ландшафта
+    private TerrainTexture blendMap; // карта смешения текстур
 
     /**
      * Конструктор ландшафта
      * @param gridX позиция по оси Х в мире
      * @param gridZ позиция по оси Z в мире
      * @param loader загрузчик
-     * @param texture текстура
+     * @param texturePack пак текстур ландшафта
+     * @param blendMap карта смешения текстур
      */
-    public Terrain(int gridX, int gridZ, Loader loader, ModelTexture texture) {
-        this.texture = texture;
+    public Terrain(int gridX, int gridZ, Loader loader,
+                   TerrainTexturePack texturePack, TerrainTexture blendMap) {
+        this.texturePack = texturePack;
+        this.blendMap = blendMap;
         this.x = gridX * SIZE;
         this.z = gridZ * SIZE;
         this.model = generateTerrain(loader);
@@ -94,7 +99,11 @@ public class Terrain {
         return model;
     }
 
-    public ModelTexture getTexture() {
-        return texture;
+    public TerrainTexturePack getTexturePack() {
+        return texturePack;
+    }
+
+    public TerrainTexture getBlendMap() {
+        return blendMap;
     }
 }

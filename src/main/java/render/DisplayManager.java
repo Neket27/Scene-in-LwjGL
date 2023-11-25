@@ -52,6 +52,12 @@ public class DisplayManager {
     private static Keyboard keyboard;
     private static Mouse mouse;
 
+    private static int frames; // количество кадров
+    private static long time; // время
+    private static boolean showFPSTitle; // показывать ли FPS в заголовке окна
+    private static double lastFrameTime; // прошло времени между кадрами
+    private static double deltaInSeconds; // разница времени в секундах
+
     /**
      * Создание окна, объявляем до начала самой игры
      */
@@ -101,7 +107,9 @@ public class DisplayManager {
         // или любым контекстом, который управляется извне. LWJGL обнаруживает 
         // текущий контекст в текущем потоке, создает экземпляр GLCapabilities 
         // и делает привязки OpenGL доступными для использования.
-        GL.createCapabilities();  
+        GL.createCapabilities();
+
+        lastFrameTime = getCurrentTime();
     }
     
     /**
@@ -110,7 +118,22 @@ public class DisplayManager {
     public static void updateDisplay() {
         glfwSwapBuffers(window); // поменяем цветовые буферы
         // Gроверяет были ли вызваны какие либо события (вроде ввода с клавиатуры или перемещение мыши)
-        glfwPollEvents(); 
+        glfwPollEvents();
+
+
+        if (showFPSTitle) {
+            frames++;
+
+            if (System.currentTimeMillis() > time + 1000) {
+                glfwSetWindowTitle(window, TITLE + " | FPS: " + frames);
+                time = System.currentTimeMillis();
+                frames = 0;
+            }
+        }
+
+        double currentFrameTime = getCurrentTime();
+        deltaInSeconds = (currentFrameTime - lastFrameTime) / 1000;
+        lastFrameTime = currentFrameTime;
     }
     
     /**
@@ -131,5 +154,26 @@ public class DisplayManager {
      */
     public static boolean shouldDisplayClose() {
         return !glfwWindowShouldClose(window);
+    }
+
+    public static void setShowFPSTitle(boolean showFPSTitle) {
+        DisplayManager.showFPSTitle = showFPSTitle;
+
+        if (!showFPSTitle) {
+            frames = 0;
+            time = 0;
+        }
+    }
+
+    public static double getDeltaInSeconds() {
+        return deltaInSeconds;
+    }
+
+    /**
+     * Получение текущего времени
+     * @return текущее время
+     */
+    private static double getCurrentTime() {
+        return glfwGetTime() * 1000;
     }
 }
