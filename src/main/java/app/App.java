@@ -17,14 +17,16 @@ import textures.ModelTexture;
 import textures.TerrainTexture;
 import textures.TerrainTexturePack;
 
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Random;
 
 public class App {
     public static void main(String[] args) throws IOException {
@@ -32,19 +34,17 @@ public class App {
 
         Loader loader = new Loader(); // загрузчик моделей
 
-
         // загрузка текстур ландшафта
         TerrainTexture backgroundTexture = new TerrainTexture(loader.loadTexture("res/asphalt.png"));
         TerrainTexture rTexture = new TerrainTexture(loader.loadTexture("res/a3.png"));
         TerrainTexture gTexture = new TerrainTexture(loader.loadTexture("res/yellow.png")); //-
         TerrainTexture bTexture = new TerrainTexture(loader.loadTexture("res/tutorial21/heightmap.png"));
         TerrainTexturePack texturePack = new TerrainTexturePack(backgroundTexture, rTexture, gTexture, bTexture);
-// загрузка карты смешивания текстур ландшафта
+        // загрузка карты смешивания текстур ландшафта
         TerrainTexture blendMap = new TerrainTexture(loader.loadTexture("res/mapForautoDrom3.png"));
 
 
 // Игрок
-
         InputStream objInputStream2 = new FileInputStream("res/bugatti.obj");
         Obj obj3 = ObjReader.read(objInputStream2);
         obj3 = ObjUtils.convertToRenderable(obj3);
@@ -63,131 +63,19 @@ public class App {
         TexturedModel stanfordBunny = new TexturedModel(m3,texture3);
 
         Player player = new Player(stanfordBunny, new Vector3f(100, 0, -50), 0, 0, 0, 1);
-
-
-        InputStream objInputStream = new FileInputStream("res/Garage/GarageOBJ/garage.obj");
-        Obj obj = ObjReader.read(objInputStream);
-        obj = ObjUtils.convertToRenderable(obj);
         List<Entity> entities = new ArrayList<>();
-        List<Mtl> allMtls = new ArrayList<Mtl>();
-        for (String mtlFileName : obj.getMtlFileNames()) {
-            InputStream mtlInputStream =
-                    new FileInputStream("res/Garage/GarageOBJ/" + mtlFileName);
-            List<Mtl> mtls = MtlReader.read(mtlInputStream);
-            allMtls.addAll(mtls);
-        }
 
-        Map<String, Obj> materialGroups = ObjSplitting.splitByMaterialGroups(obj);
-        int[] faceVertexIndices;
-        float[] vertices;
-        float[] texCoords;
-        float[] normals;
-        for (Map.Entry<String, Obj> entry : materialGroups.entrySet()) {
-            String materialName = entry.getKey();
-            Obj materialGroup = entry.getValue();
+        entities.addAll(createEntityWithMaterial(loader,"res/Garage/GarageOBJ/garage.obj","res/Garage/GarageOBJ",0));
 
-            System.out.println("Material name  : " + materialName);
-            System.out.println("Material group : " + materialGroup);
-
-            // Find the MTL that defines the material with the current name
-            Mtl mtl = findMtlForName(allMtls, materialName);
-            System.out.println("bump =" + mtl.getBump());
-            // Render the current material group with this material:
-
-
-            faceVertexIndices = ObjData.getFaceVertexIndicesArray(materialGroup);
-            vertices = ObjData.getVerticesArray(materialGroup);
-            texCoords = ObjData.getTexCoordsArray(materialGroup, 2);
-            normals = ObjData.getNormalsArray(materialGroup);
-            RawModel m2 = loader.loadToVao(vertices, texCoords, normals, faceVertexIndices);
-//String name=mtl.getName();
-            String name = "res/Garage/GarageOBJ/mtl_4_spec.tga";
-            ModelTexture texture = new ModelTexture(loader.loadTexture("res/Garage/GarageOBJ/" + mtl.getBump()));
-            // Установка переменных блеска
-            texture.setShineDamper(20);
-            texture.setReflectivity(0f);
-            //sendToRenderer(mtl, materialGroup);
-
-            TexturedModel staticModel = new TexturedModel(m2, texture);
-
-
-            Entity m = new Entity(staticModel, new Vector3f(0, 0, -15), 0, 0, 0, 3);
-            m.increasePosition(0, 2, 0);
-            m.increaseRotation(0, 150, 0);
-            entities.add(m);
-        }
-
-        IntBuffer indicesS = ObjData.getFaceVertexIndices(obj, 3);
-        FloatBuffer verticesS = ObjData.getVertices(obj);
-        FloatBuffer texCoordsS = ObjData.getTexCoords(obj, 2);
-        FloatBuffer normalsS = ObjData.getNormals(obj);
-
-//        int faceVertexIndices[] = ObjData.getFaceVertexIndicesArray(obj);
-//        float vertices[] = ObjData.getVerticesArray(obj);
-//        float texCoords[] = ObjData.getTexCoordsArray(obj, 2);
-//        float normals[] = ObjData.getNormalsArray(obj);
-
-        //System.out.println(vertices.length);
-//        System.out.println("Indices:");
-//        System.out.println(createString(indices, 3));
 //
-//        System.out.println("Vertices:");
-//        System.out.println(createString(vertices, 3));
-//
-//        System.out.println("Texture coordinates:");
-//        System.out.println(createString(texCoords, 2));
-//
-//        System.out.println("Normals:");
-//        System.out.println(createString(normals, 3));
-//       float[] a= toArrayFloat(vertices,3);
-//       float[]t=toArrayFloat(texCoords,2);
-//       float[]n=toArrayFloat(normals,3);
-//       int[]i=toArrayFloat(indices,3);
-//RawModel m2= loader.loadToVao(vertices,texCoords,normals,faceVertexIndices);
-        float[] floatArray = new float[]{3.4f, 3.5f, 3.6f, 3.7f, 3.8f, 3.1234f, 6.2344f, 8.34f, 9.8f};
-        FloatBuffer bb = FloatBuffer.wrap(floatArray);
-        System.out.println(Arrays.toString(bb.array()));
-
-        //  System.out.println(indices.array().length);
-
-//        try {
-//            int capacity = 10;
-//            // creating object of floatbuffer
-//            // and allocating size capacity
-//            FloatBuffer fb = FloatBuffer.allocate(capacity);
-//
-//            // putting the value in floatbuffer
-//            fb.put(8.56F);
-//            fb.put(2, 9.61F);
-//          //  fb.rewind();
-//
-//            // getting array from fb FloatBuffer using array() method
-//            float[] fbb = fb.array();
-//            float[] fbb2 = vertices.array();
-//
-//            // printing the FloatBuffer fb
-//            System.out.println("FloatBuffer:  "
-//                    + Arrays.toString(fbb));
-//
-//            System.out.println("FloatBuffer2:  "
-//                    + Arrays.toString(fbb2));
-//
-//        } finally {
-//
-//        };
-
-
-        //RawModel r=loader.loadToVao(vertices.array(),texCoords.array(),normals.array(),indices.array());
-//RawModel rawModel2=OBJLoader.loadObjModel(obj,loader);
+//        IntBuffer indicesS = ObjData.getFaceVertexIndices(obj, 3);
+//        FloatBuffer verticesS = ObjData.getVertices(obj);
+//        FloatBuffer texCoordsS = ObjData.getTexCoords(obj, 2);
+//        FloatBuffer normalsS = ObjData.getNormals(obj);
 
         // загружаем модель в память OpenGL
         RawModel model = OBJLoader.loadObjModel("res/tutorial14/tree.obj", loader);
-        //    RawModel model2 = OBJLoader.loadObjModel("res/Garage/GarageOBJ/garage.obj", loader);
-        // загрузим текстуру используя загрузчик
-//       ModelTexture texture = new ModelTexture(loader.loadTexture("res/11.png"));
-//        // Установка переменных блеска
-//        texture.setShineDamper(20);
-//        texture.setReflectivity(0f);
+
 
         // Создание текстурной модели
         ModelTexture texture = new ModelTexture(loader.loadTexture("res/garage2020.png"));
@@ -196,20 +84,22 @@ public class App {
         texture.setReflectivity(0f);
         //sendToRenderer(mtl, materialGroup);
 
-        InputStream objInputStream3 = new FileInputStream("res/double_garage.obj");
-        Obj obj2 = ObjReader.read(objInputStream3);
-        obj2 = ObjUtils.convertToRenderable(obj2);
-        faceVertexIndices = ObjData.getFaceVertexIndicesArray(obj2);
-        vertices = ObjData.getVerticesArray(obj2);
-        texCoords = ObjData.getTexCoordsArray(obj2, 2);
-        normals = ObjData.getNormalsArray(obj2);
-        RawModel m2 = loader.loadToVao(vertices, texCoords, normals, faceVertexIndices);
+//        InputStream objInputStream3 = new FileInputStream("res/double_garage.obj");
+//        Obj obj2 = ObjReader.read(objInputStream3);
+//        obj2 = ObjUtils.convertToRenderable(obj2);
+//        faceVertexIndices = ObjData.getFaceVertexIndicesArray(obj2);
+//        vertices = ObjData.getVerticesArray(obj2);
+//        texCoords = ObjData.getTexCoordsArray(obj2, 2);
+//        normals = ObjData.getNormalsArray(obj2);
+//        RawModel m2 = loader.loadToVao(vertices, texCoords, normals, faceVertexIndices);
+//
+//        TexturedModel staticModel = new TexturedModel(m2, texture);
+//        Entity gr = new Entity(staticModel, new Vector3f(40, 0, -15), 0, 0, 0, 3);
+//        gr.increasePosition(0, 2, 0);
+//        gr.increaseRotation(0, 150, 0);
 
-        TexturedModel staticModel = new TexturedModel(m2, texture);
-        Entity gr = new Entity(staticModel, new Vector3f(40, 0, -15), 0, 0, 0, 3);
-        gr.increasePosition(0, 2, 0);
-        gr.increaseRotation(0, 150, 0);
-        entities.add(gr);
+
+       // entities.addAll(createEntityWithMaterial(loader,"res/double_garage.obj","res",30));
 
 
         // создание источника света
@@ -223,7 +113,6 @@ public class App {
         MasterRenderer renderer = new MasterRenderer();
 
 
-        //////////сегодня
         // Загрузка текстурных моделей
 // дерево
         TexturedModel staticModelS = new TexturedModel(OBJLoader.loadObjModel("res/tutorial15/tree.obj", loader),
@@ -276,7 +165,6 @@ public class App {
         // as uniform variables to a shader
         FloatTuple diffuseColor = mtl.getKd();
         FloatTuple specularColor = mtl.getKs();
-        // ...
 
         // Extract the geometry data. This data can be used to create
         // the vertex buffer objects and vertex array objects for OpenGL
@@ -314,60 +202,70 @@ public class App {
         return null;
     }
 
-    public static float[] toArray(final FloatBuffer buffer) {
-        float[] array = new float[buffer.limit()];
-        buffer.get(array);
-        return array;
-    }
-    public static float[] toArrayFloat(FloatBuffer buffer, int stride){
-        float[] arr= new float[buffer.capacity()];
-        for (int i=0; i<buffer.capacity(); i+=stride){
-            arr[i]=buffer.get(i);
+    private static List<Entity> createEntityWithMaterial(Loader loader, String objPath, String folderPathWithTexture,int x) throws IOException {
+       List<Entity> entities =new ArrayList<>();
+        InputStream objInputStream = new FileInputStream(objPath);
+        Obj obj = ObjReader.read(objInputStream);
+        obj = ObjUtils.convertToRenderable(obj);
+        List<Mtl> allMtls = new ArrayList<Mtl>();
+
+        for (String mtlFileName : obj.getMtlFileNames()) {
+            InputStream mtlInputStream = new FileInputStream(folderPathWithTexture+"/" + mtlFileName);
+            List<Mtl> mtls = MtlReader.read(mtlInputStream);
+            allMtls.addAll(mtls);
         }
-        return  arr;
+
+        Map<String, Obj> materialGroups = ObjSplitting.splitByMaterialGroups(obj);
+        int[] faceVertexIndices;
+        float[] vertices;
+        float[] texCoords;
+        float[] normals;
+        Entity m = null;
+        for (Map.Entry<String, Obj> entry : materialGroups.entrySet()) {
+            String materialName = entry.getKey();
+            Obj materialGroup = entry.getValue();
+
+            System.out.println("Material name  : " + materialName);
+            System.out.println("Material group : " + materialGroup);
+
+            // Find the MTL that defines the material with the current name
+            Mtl mtl = findMtlForName(allMtls, materialName);
+
+            assert mtl != null;
+            if(mtl.getMapKdOptions()!=null)
+            System.out.println("bump =" + mtl.getMapKdOptions().getFileName());
+            //  System.out.println("v =" + materialGroup.getVertex(0));
+            // Render the current material group with this material:
+
+
+            faceVertexIndices = ObjData.getFaceVertexIndicesArray(materialGroup);
+            vertices = ObjData.getVerticesArray(materialGroup);
+            texCoords = ObjData.getTexCoordsArray(materialGroup, 2);
+            normals = ObjData.getNormalsArray(materialGroup);
+            RawModel m2 = loader.loadToVao(vertices, texCoords, normals, faceVertexIndices);
+//String name=mtl.getName();
+            String name = "res/Garage/GarageOBJ/mtl_4_spec.tga";
+          //  ModelTexture texture = new ModelTexture(loader.loadTexture(folderPathWithTexture+"/" + mtl.getMapKdOptions().getFileName()));
+            ModelTexture texture;
+            if(mtl.getMapKdOptions()!=null)
+            texture = new ModelTexture(loader.loadTexture(folderPathWithTexture+"/" + mtl.getMapKdOptions().getFileName()));
+            else
+                texture = new ModelTexture(loader.loadTexture("res/11.png"));
+            // Установка переменных блеска
+            texture.setShineDamper(20);
+            texture.setReflectivity(0f);
+            //sendToRenderer(mtl, materialGroup);
+
+            TexturedModel staticModel = new TexturedModel(m2, texture);
+
+            m = new Entity(staticModel, new Vector3f(x, 0, -15), 0, 0, 0, 3);
+            m.increasePosition(0, 2, 0);
+            m.increaseRotation(0, 150, 0);
+            entities.add(m);
+
+        }
+        return entities;
     }
 
-    public static int[] toArrayFloat(IntBuffer buffer, int stride){
-        int[] arr= new int[buffer.capacity()];
-        for (int i=0; i<buffer.capacity(); i+=stride){
-            arr[i]=buffer.get(i);
-        }
-        return  arr;
-    }
 
-    private static String createString(IntBuffer buffer, int stride)
-    {
-        StringBuilder sb = new StringBuilder();
-        for (int i=0; i<buffer.capacity(); i+=stride)
-        {
-            for (int j=0; j<stride; j++)
-            {
-                if (j > 0)
-                {
-                    sb.append(", ");
-                }
-                sb.append(buffer.get(i+j));
-            }
-            sb.append("\n");
-        }
-        return sb.toString();
-    }
-
-    private static String createString(FloatBuffer buffer, int stride)
-    {
-        StringBuilder sb = new StringBuilder();
-        for (int i=0; i<buffer.capacity(); i+=stride)
-        {
-            for (int j=0; j<stride; j++)
-            {
-                if (j > 0)
-                {
-                    sb.append(", ");
-                }
-                sb.append(buffer.get(i+j));
-            }
-            sb.append("\n");
-        }
-        return sb.toString();
-    }
 }

@@ -4,28 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="235aaaf7-95b4-4fc8-8948-340649fab665" name="Changes" comment="add fake light and break plain without texture">
-      <change afterPath="$PROJECT_DIR$/res/asphalt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/mapForautoDrom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/mapForautoDrom2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/mapForautoDrom3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/whileFone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/yellow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/textures/TerrainTexture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/textures/TerrainTexturePack.java" afterDir="false" />
+    <list default="true" id="235aaaf7-95b4-4fc8-8948-340649fab665" name="Changes" comment="work project">
+      <change afterPath="$PROJECT_DIR$/res/Bambo_House_obj/Bambo_House.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Bambo_House_obj/Bambo_House.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/render/DisplayManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/render/DisplayManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/render/TerrainRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/render/TerrainRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shaders/TerrainShader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shaders/TerrainShader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shaders/fragmentShader.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shaders/fragmentShader.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shaders/terrainFragmentShader.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shaders/terrainFragmentShader.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shaders/terrainVertexShader.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shaders/terrainVertexShader.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shaders/vertexShader.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shaders/vertexShader.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/terrains/Terrain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/terrains/Terrain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +110,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700333040604</updated>
-      <workItem from="1700333041643" duration="82223000" />
+      <workItem from="1700333041643" duration="95646000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -193,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700846934928</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="work project">
+      <option name="closed" value="true" />
+      <created>1700940345674</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700940345674</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +207,8 @@
     <MESSAGE value="in work" />
     <MESSAGE value="." />
     <MESSAGE value="add fake light and break plain without texture" />
-    <option name="LAST_COMMIT_MESSAGE" value="add fake light and break plain without texture" />
+    <MESSAGE value="work project" />
+    <option name="LAST_COMMIT_MESSAGE" value="work project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -225,6 +217,11 @@
           <properties class="java.lang.UnsupportedOperationException" package="java.lang" />
           <option name="timeStamp" value="2" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/App.java</url>
+          <line>233</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
