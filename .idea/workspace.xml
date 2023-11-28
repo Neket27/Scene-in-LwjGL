@@ -4,7 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7855055d-dd5f-45de-b3d1-cf9b0f2a2ea4" name="Changes" comment="" />
+    <list default="true" id="7855055d-dd5f-45de-b3d1-cf9b0f2a2ea4" name="Changes" comment="test git">
+      <change afterPath="$PROJECT_DIR$/res/Range_Rover_Sport_OBJ/2016 Custom Range Rover Sport.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Range_Rover_Sport_OBJ/2016 Custom Range Rover Sport.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/bugatti/bugatti.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/bugatti/bugatti.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/cactus/107466_open3dmodel.com/10436_Cactus_v1_L3.123ce67a3113-eb68-4881-a89e-34941294e48f/10436_Cactus_v1_Diffuse.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/cactus/107466_open3dmodel.com/10436_Cactus_v1_L3.123ce67a3113-eb68-4881-a89e-34941294e48f/10436_Cactus_v1_max2010_it2.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/cactus/107466_open3dmodel.com/10436_Cactus_v1_L3.123ce67a3113-eb68-4881-a89e-34941294e48f/10436_Cactus_v1_max2010_it2.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/rangeRower/Models/1.3DS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/rangeRower/Models/1.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/rangeRower/Models/1.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/rangeRower/Models/2010071618474806235.max" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/rangeRower/Models/20140328044852950137.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/rangeRower/Models/20140328044852950139.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/rangeRower/Models/20140328044852950403.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/rangeRower/Models/20140328044852950612.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/rangeRower/Models/20140328044852951634.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/rangeRower/Models/bumpbee.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/rangeRower/Models/chrbump.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/rangeRower/Models/grillbumps.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/rangeRower/Models/orange.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/rangeRower/Models/rover-logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/rangeRower/Models/rover-red.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/rangeRower/Models/tablica.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/rangeRower/Models/tire.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/LoaderLandscape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/LoaderPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/UtilsLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Porsche_911_GT2.obj" beforeDir="false" afterPath="$PROJECT_DIR$/res/Porsche_911_GT2.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/render/EntityRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/render/EntityRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/shaders/ShaderProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shaders/ShaderProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/shaders/StaticShader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shaders/StaticShader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/shaders/fragmentShader.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shaders/fragmentShader.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/textures/ModelTexture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/textures/ModelTexture.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +70,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/neket/IdeaProjects/scene-in-LwjGL",
+    "last_opened_file_path": "/home/neket/IdeaProjects/scene/Scene-in-LwjGL",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -43,6 +78,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -51,8 +91,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701167441053</updated>
-      <workItem from="1701167442487" duration="1329000" />
+      <workItem from="1701167442487" duration="1781000" />
     </task>
+    <task id="LOCAL-00001" summary="test git">
+      <option name="closed" value="true" />
+      <created>1701178649494</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701178649494</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -68,5 +117,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test git" />
+    <option name="LAST_COMMIT_MESSAGE" value="test git" />
   </component>
 </project>

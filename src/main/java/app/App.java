@@ -8,17 +8,16 @@ import entities.Player;
 import models.RawModel;
 import models.TexturedModel;
 import org.joml.Vector3f;
+import org.joml.Vector4f;
 import render.DisplayManager;
 import render.Loader;
 import render.MasterRenderer;
 import render.OBJLoader;
 import terrains.Terrain;
 import textures.ModelTexture;
-import textures.TerrainTexture;
-import textures.TerrainTexturePack;
+import utils.UtilsLoader;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.FloatBuffer;
@@ -33,36 +32,12 @@ public class App {
         DisplayManager.createDisplay();
 
         Loader loader = new Loader(); // загрузчик моделей
+        Terrain terrain =  UtilsLoader.loadLandscape(loader,0,-1);
+        Terrain terrain2 = UtilsLoader.loadLandscape(loader,-1,-1);
 
-        // загрузка текстур ландшафта
-        TerrainTexture backgroundTexture = new TerrainTexture(loader.loadTexture("res/asphalt.png"));
-        TerrainTexture rTexture = new TerrainTexture(loader.loadTexture("res/a3.png"));
-        TerrainTexture gTexture = new TerrainTexture(loader.loadTexture("res/yellow.png")); //-
-        TerrainTexture bTexture = new TerrainTexture(loader.loadTexture("res/tutorial21/heightmap.png"));
-        TerrainTexturePack texturePack = new TerrainTexturePack(backgroundTexture, rTexture, gTexture, bTexture);
-        // загрузка карты смешивания текстур ландшафта
-        TerrainTexture blendMap = new TerrainTexture(loader.loadTexture("res/mapForautoDrom3.png"));
+        Player player = UtilsLoader.loadPlayer(loader);
 
 
-// Игрок
-        InputStream objInputStream2 = new FileInputStream("res/bugatti.obj");
-        Obj obj3 = ObjReader.read(objInputStream2);
-        obj3 = ObjUtils.convertToRenderable(obj3);
-        int[] faceVertexIndices3;
-        faceVertexIndices3 = ObjData.getFaceVertexIndicesArray(obj3);
-        float[] vertices3;
-        vertices3 = ObjData.getVerticesArray(obj3);
-        float[] texCoords3;
-        texCoords3 = ObjData.getTexCoordsArray(obj3, 2);
-        float[] normals3;
-        normals3 = ObjData.getNormalsArray(obj3);
-        RawModel m3 = loader.loadToVao(vertices3, texCoords3, normals3, faceVertexIndices3);
-
-
-        ModelTexture texture3 = new ModelTexture(loader.loadTexture("res/tutorial18/white.png"));
-        TexturedModel stanfordBunny = new TexturedModel(m3,texture3);
-
-        Player player = new Player(stanfordBunny, new Vector3f(100, 0, -50), 0, 0, 0, 1);
         List<Entity> entities = new ArrayList<>();
 
         entities.addAll(createEntityWithMaterial(loader,"res/Garage/GarageOBJ/garage.obj","res/Garage/GarageOBJ",0));
@@ -99,14 +74,12 @@ public class App {
 //        gr.increaseRotation(0, 150, 0);
 
 
-       // entities.addAll(createEntityWithMaterial(loader,"res/double_garage.obj","res",30));
-
-
+        //entities.addAll(createEntityWithMaterial(loader,"res/double_garage.obj","res",30));
+        //   entities.addAll(createEntityWithMaterial(loader,"res/Bambo_House_obj/Bambo_House.obj","res/Bambo_House_obj",60));
+        entities.addAll(createEntityWithMaterial(loader,"res/bugatti/bugatti.obj","res/bugatti",120));
+        entities.addAll(createEntityWithMaterial(loader,"res/Range_Rover_Sport_OBJ/2016 Custom Range Rover Sport.obj","res/Range_Rover_Sport_OBJ",180));
         // создание источника света
         Light light = new Light(new Vector3f(3000, 2000, 3000), new Vector3f(1, 1, 1));
-
-        Terrain terrain = new Terrain(0, -1, loader, texturePack, blendMap);
-        Terrain terrain2 = new Terrain(-1, -1, loader, texturePack, blendMap);
 
         Camera camera = new Camera(player);
 
@@ -127,6 +100,7 @@ public class App {
         grass.getTexture().setHasTransparency(true); // включаем прозрачность текстур
         //grass.getTexture().setUseFakeLighting(true); // включаем фальшивое освещение
 
+
         Random random = new Random();
         for (int i = 0; i < 500; i++) {
             entities.add(new Entity(staticModelS, new Vector3f(random.nextFloat() * 800 - 400, 0,
@@ -135,6 +109,24 @@ public class App {
                     random.nextFloat() * -600), 0, 0, 0, 1));
             entities.add(new Entity(fern, new Vector3f(random.nextFloat() * 800 - 400, 0,
                     random.nextFloat() * -600), 0, 0, 0, 0.6f));
+
+            entities.add(new Entity(grass, new Vector3f(random.nextFloat() * 800 - 400, 0,
+                    random.nextFloat() * -600), 0, 0, 0, 1));
+          List<Entity> cactus2 =  createEntityWithMaterial(loader,"res/cactus/107466_open3dmodel.com/10436_Cactus_v1_L3.123ce67a3113-eb68-4881-a89e-34941294e48f/10436_Cactus_v1_max2010_it2.obj","res/cactus/107466_open3dmodel.com/10436_Cactus_v1_L3.123ce67a3113-eb68-4881-a89e-34941294e48f",0);
+
+          cactus2.forEach(e->{
+              e.getModel().getTexture().setShineDamper(20);
+              e.getModel().getTexture().setReflectivity(1);
+
+              e.setScale(0.05f);
+              e.increaseRotation(-90,0,0);
+              e.increaseRotation(0, -150, 0);
+              e.getModel().getTexture().setHasTransparency(true); // включаем прозрачность текстур
+              e.getModel().getTexture().setUseFakeLighting(true); // включаем фальшивое освещение
+              e.setPosition(new Vector3f(random.nextFloat() * 800 - 400, 0,
+                      random.nextFloat() * -600));
+          });
+entities.addAll(cactus2);
 
         }
         // запускаем цикл пока пользователь не закроет окно
@@ -225,15 +217,15 @@ public class App {
             String materialName = entry.getKey();
             Obj materialGroup = entry.getValue();
 
-            System.out.println("Material name  : " + materialName);
-            System.out.println("Material group : " + materialGroup);
+         //   System.out.println("Material name  : " + materialName);
+          //  System.out.println("Material group : " + materialGroup);
 
             // Find the MTL that defines the material with the current name
             Mtl mtl = findMtlForName(allMtls, materialName);
-
+            FloatTuple diffuseColor = mtl.getKd();
             assert mtl != null;
-            if(mtl.getMapKdOptions()!=null)
-            System.out.println("bump =" + mtl.getMapKdOptions().getFileName());
+          //  if(mtl.getMapKdOptions()!=null)
+          //  System.out.println("bump =" + mtl.getMapKdOptions().getFileName());
             //  System.out.println("v =" + materialGroup.getVertex(0));
             // Render the current material group with this material:
 
@@ -246,11 +238,13 @@ public class App {
 //String name=mtl.getName();
             String name = "res/Garage/GarageOBJ/mtl_4_spec.tga";
           //  ModelTexture texture = new ModelTexture(loader.loadTexture(folderPathWithTexture+"/" + mtl.getMapKdOptions().getFileName()));
-            ModelTexture texture;
+            ModelTexture texture = new ModelTexture();
+          //  System.out.println("diffuseColor= "+diffuseColor);
             if(mtl.getMapKdOptions()!=null)
             texture = new ModelTexture(loader.loadTexture(folderPathWithTexture+"/" + mtl.getMapKdOptions().getFileName()));
             else
-                texture = new ModelTexture(loader.loadTexture("res/11.png"));
+               //texture = new ModelTexture(loader.loadTexture("res/11.png"));
+            texture.setColor(new Vector4f(diffuseColor.getX(), diffuseColor.getY(), diffuseColor.getZ(),1));
             // Установка переменных блеска
             texture.setShineDamper(20);
             texture.setReflectivity(0f);

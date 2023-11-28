@@ -3,6 +3,7 @@ package shaders;
 import entities.Camera;
 import entities.Light;
 import org.joml.Matrix4f;
+import org.joml.Vector4f;
 import toolbox.Maths;
 
 /**
@@ -27,6 +28,7 @@ public class StaticShader extends ShaderProgram {
     private int location_shineDamper; // коэффициент блеска материала
     private int location_reflectivity; // отражательная способность материала
     private int location_useFakeLighting; // фальшивое освещение
+    private int location_textureColor; // цвет источника света
     public StaticShader() {
         super(VERTEX_FILE, FRAGMENT_FILE);
     }
@@ -50,6 +52,7 @@ public class StaticShader extends ShaderProgram {
         location_shineDamper = super.getUniformLocation("shineDamper");
         location_reflectivity = super.getUniformLocation("reflectivity");
         location_useFakeLighting = super.getUniformLocation("useFakeLighting");
+        location_textureColor = super.getUniformLocation("textureColor");
     }
     
     /**
@@ -67,6 +70,10 @@ public class StaticShader extends ShaderProgram {
     public void loadLight(Light light) {
         super.loadVector(location_lightPosition, light.getPosition());
         super.loadVector(location_lightColour, light.getColour());
+    }
+    
+    public void loadTextureColor(Vector4f textureColor){
+        loadVector(location_textureColor,textureColor);
     }
     
     /**

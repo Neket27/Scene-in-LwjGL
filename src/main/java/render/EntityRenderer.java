@@ -4,6 +4,7 @@ import entities.Entity;
 import models.RawModel;
 import models.TexturedModel;
 import org.joml.Matrix4f;
+import org.joml.Vector4f;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL13;
 import org.lwjgl.opengl.GL20;
@@ -40,7 +41,7 @@ public class EntityRenderer {
             List<Entity> batch = entities.get(model); // получаем все сущности
             for (Entity entity : batch) { // проходимся по каждому объекту
                 prepareInstance(entity); // подготавливаем объект
-                
+                this.shader.loadTextureColor(entity.getModel().getTexture().getColor());
                 // Рисуем примитивы. Аргументы:
                 // - тип примитива (в данном случаем треугольники)
                 // - количество вершин в модели
@@ -69,6 +70,7 @@ public class EntityRenderer {
         
         // загрузка переменных отражения
         ModelTexture texture = model.getTexture();
+
         // отключение отсечения задних граней если текстура с прозрачностью
 
         // загрузка фальшивого освещения

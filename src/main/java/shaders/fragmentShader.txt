@@ -8,6 +8,7 @@ in float visibility; // видимость вершины для тумана
 
 out vec4 fragColor;
 
+uniform vec4 textureColor;
 uniform sampler2D textureSampler;
 uniform vec3 lightColour; // цвет источника света
 uniform float shineDamper; // коэффициент блеска материала
@@ -38,13 +39,15 @@ void main()
     // рассчитываем зеркальный эффект
     vec3 finalSpecular = dampedFactor * reflectivity * lightColour;
 
+vec4 textureColour;
     // метод texture координату точки на модели сопоставляет с координатой точи на текстуре
-    vec4 textureColour = texture(textureSampler, pass_textureCoords);
+    textureColour = texture(textureSampler, pass_textureCoords)+textureColor;
+
     // если прозрачность пикселя(альфа-канал) меньше 0.5
     if(textureColour.a < 0.5) {
         discard; // запрещаем вывод пикселя
     }
-    
+
     fragColor = vec4(diffuse, 1.0) * textureColour + vec4(finalSpecular, 1.0);
     // туман. Смешиваем 2 цвета с интенсивностью
     fragColor = mix(vec4(skyColour,1.0),fragColor, visibility); 
