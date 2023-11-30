@@ -34,30 +34,44 @@ public class App {
         PlayerService playerService = new PlayerService();
 
         Loader loader = new Loader(); // загрузчик моделей
-        Terrain terrain = landscapeService.create(loader,0,-1,"res/textuteSphere.png","res/a3.png","res/yellow.png","res/tutorial21/heightmap.png","res/mapForautoDrom3.png");
-        Terrain terrain2 = landscapeService.create(loader,-1,-1,"res/textuteSphere.png","res/a3.png","res/yellow.png","res/tutorial21/heightmap.png","res/mapForautoDrom3.png");
-        Player player = playerService.create(loader);
+        Terrain terrain = landscapeService.create(loader,0,-1,"res/whileFone.png","res/a3.png","res/yellow.png","res/tutorial21/heightmap.png","res/mapForautoDrom3.png");
+        Terrain terrain2 = landscapeService.create(loader,-1,-1,"res/whileFone.png","res/a3.png","res/yellow.png","res/tutorial21/heightmap.png","res/mapForautoDrom3.png");
+        //Player player = playerService.create(loader);
+        List<Player> player =playerService.create(loader,"res/bugatti/bugatti.obj","res/bugatti");
         Camera camera = new Camera(player);
         MasterRenderer renderer = new MasterRenderer();
 
         List<Entity> entities = new ArrayList<>();
+        List <Entity> garage =entityService.createEntityWithMaterial(loader,"res/Garage/GarageOBJ/garage.obj","res/Garage/GarageOBJ",-100,0,-30,6);
+        garage.forEach(e->e.increaseRotation(0,140,0));
+        entities.addAll(garage);
 
-//        entities.addAll(entityService.createEntityWithMaterial(loader,"res/Garage/GarageOBJ/garage.obj","res/Garage/GarageOBJ",0,0,-15,3));
-//        entities.addAll(entityService.createEntityWithMaterial(loader,"res/Bambo_House_obj/Bambo_House.obj","res/Bambo_House_obj",60,0,-30,3));
-//        entities.addAll(entityService.createEntityWithMaterial(loader,"res/bugatti/bugatti.obj","res/bugatti",120,0,-30,0.5f));
-//        entities.addAll(entityService.createEntityWithMaterial(loader,"res/Range_Rover_Sport_OBJ/2016 Custom Range Rover Sport.obj","res/Range_Rover_Sport_OBJ",180,0,-20,3));
+        List<Entity> house = entityService.createEntityWithMaterial(loader, "res/Bambo_House_obj/Bambo_House.obj", "res/Bambo_House_obj", -45, 0, -25, 5);
+        house.forEach(e->{
+            e.getModel().getTexture().setUseFakeLighting(true);
+            e.getModel().getTexture().setReflectivity(0.1f);
+            e.increaseRotation(0,-45,0);
+        });
+
+        entities.addAll(house);
+        entities.addAll(entityService.createEntityWithMaterial(loader,"res/bugatti/bugatti.obj","res/bugatti",120,0,-30,2));
+        entities.addAll(entityService.createEntityWithMaterial(loader,"res/Range_Rover_Sport_OBJ/2016 Custom Range Rover Sport.obj","res/Range_Rover_Sport_OBJ",-75,1,-60,6));
 
         // создание источника света
-        Light light = new Light(new Vector3f(3000, 2000, 3000), new Vector3f(1, 1, 1));
+        Light light = new Light(new Vector3f(3000, 2000, -3000), new Vector3f(1, 1, 1));
 
+       // entities.addAll(entityService.createEntityWithMaterial(loader,"res/Bambo_House_obj/Bambo_House.obj","res/Bambo_House_obj",0,0,0,3));
+      //  List<Entity> cactus2 =  entityService.createEntityWithMaterial(loader,"res/cactus/107466_open3dmodel.com/10436_Cactus_v1_L3.123ce67a3113-eb68-4881-a89e-34941294e48f/10436_Cactus_v1_max2010_it2.obj","res/cactus/107466_open3dmodel.com/10436_Cactus_v1_L3.123ce67a3113-eb68-4881-a89e-34941294e48f",0,0,0);
 
-
+        List<Entity> cactus2 =  entityService.createEntityWithMaterial(loader,"res/cactus/107466_open3dmodel.com/10436_Cactus_v1_L3.123ce67a3113-eb68-4881-a89e-34941294e48f/10436_Cactus_v1_max2010_it2.obj","res/cactus/107466_open3dmodel.com/10436_Cactus_v1_L3.123ce67a3113-eb68-4881-a89e-34941294e48f",10,0,0,-90,0,0,0.06f);
         RandomCords randomCords = new RandomCords();
-        for (int i = 0; i < 500; i++) {
-            entities.add(entityService.createEntityWithTexture(loader,"res/tutorial15/grassModel.obj","res/tutorial15/grassTexture.png",true,true,randomCords.random(),0,0,0,3));
-           entities.addAll(entityService.createEntityWithMaterial(loader,"res/Bambo_House_obj/Bambo_House.obj","res/Bambo_House_obj",0,0,0,4));
-            //  entities.add(UtilsLoader.loadEntity(loader,"res/tutorial15/fern.obj","res/tutorial15/fern.png",true,true,randomCords.random(), 0, 0, 0, 1));
+        for (int i = 0; i < 100; i++) {
+            List<Entity> cactus = cactus2.stream().map(Entity::clone).toList();
+            entities.add(entityService.createEntityWithTexture(loader,"res/tutorial15/grassModel.obj","res/tutorial15/grassTexture.png",true,true,randomCords.random(),0,0,0,1));
+            entities.add(entityService.createEntityWithTexture(loader,"res/tutorial15/fern.obj","res/tutorial15/fern.png",true,true,randomCords.random(), 0, 0, 0, 1));
 
+            cactus.forEach(e->e.setPosition(randomCords.random()));
+            entities.addAll(cactus);
 
             //entities.add(new Entity(UtilsLoader))
 //            entities.add(new Entity(gras0, 0, 0, 3s, new Vector3f(random.nextFloat() * 800 - 400, 0,
@@ -88,13 +102,17 @@ public class App {
 //          });
 //entities.addAll(cactus2);
 
-        }
+                 }
 
         // запускаем цикл пока пользователь не закроет окно
         while (DisplayManager.shouldDisplayClose()) {
             camera.move(); // двигаем камеру
-            player.move(); // двигаем игрока
-            renderer.processEntity(player); // рисуем игрока
+            //player.move(); // двигаем игрока
+            player.forEach(p->{
+                p.move();// двигаем игрока
+                renderer.processEntity(p); // рисуем игрока
+            });
+
             // рисуем объекты
             renderer.processTerrain(terrain);
             renderer.processTerrain(terrain2);

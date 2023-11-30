@@ -9,7 +9,6 @@ import org.joml.Vector4f;
 import render.Loader;
 import render.OBJLoader;
 import textures.ModelTexture;
-import utils.UtilsLoader;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -20,8 +19,7 @@ import java.util.Map;
 
 public class EntityService {
 
-    public EntityService() {
-    }
+    public EntityService() {}
 
     public Entity createEntityWithTexture(Loader loader, String objPath, String pathFolderWithTexture,boolean hasTransparency, boolean useFakeLighting, Vector3f cords, float scale) throws IOException {
         return createEntityWithTexture(loader,objPath,pathFolderWithTexture,hasTransparency,useFakeLighting,cords, 0, 0, 0, scale);
@@ -31,12 +29,15 @@ public class EntityService {
         // Загрузка текстурных моделей
         TexturedModel texturedModel = new TexturedModel(OBJLoader.loadObjModel(pathObj, loader),
                 new ModelTexture(loader.loadTexture(pathTexture)));
-        texturedModel.getTexture().setHasTransparency(hasTransparency); // включаем прозрачность текстур
-        texturedModel.getTexture().setUseFakeLighting(useFakeLighting); // включаем фальшивое освещение
+        //texturedModel.getTexture().setHasTransparency(hasTransparency); // включаем прозрачность текстур
+       // texturedModel.getTexture().setUseFakeLighting(useFakeLighting); // включаем фальшивое освещение
 
         return  new Entity(texturedModel,cords,rotationX,rotationY,rotationZ,scale);
     }
 
+    public   List<Entity> createEntityWithMaterial(Loader loader, String objPath, String folderPathWithTexture, Vector3f cords) throws IOException {
+        return createEntityWithMaterial( loader,objPath,folderPathWithTexture,(int)cords.x,(int)cords.y,(int)cords.z,0,0,0,1);
+    }
 
     public   List<Entity> createEntityWithMaterial(Loader loader, String objPath, String folderPathWithTexture, int x,int y, int z) throws IOException {
         return createEntityWithMaterial( loader,objPath,folderPathWithTexture,x,y,z,0,0,0,1);
@@ -75,20 +76,13 @@ public class EntityService {
             // Find the MTL that defines the material with the current name
             Mtl mtl = findMtlForName(allMtls, materialName);
             FloatTuple diffuseColor = mtl.getKd();
-           // assert mtl != null;
-            //  if(mtl.getMapKdOptions()!=null)
-            //  System.out.println("bump =" + mtl.getMapKdOptions().getFileName());
-            //  System.out.println("v =" + materialGroup.getVertex(0));
-            // Render the current material group with this material:
-
 
             faceVertexIndices = ObjData.getFaceVertexIndicesArray(materialGroup);
             vertices = ObjData.getVerticesArray(materialGroup);
             texCoords = ObjData.getTexCoordsArray(materialGroup, 2);
             normals = ObjData.getNormalsArray(materialGroup);
             RawModel m2 = loader.loadToVao(vertices, texCoords, normals, faceVertexIndices);
-//String name=mtl.getName();
-            //  ModelTexture texture = new ModelTexture(loader.loadTexture(folderPathWithTexture+"/" + mtl.getMapKdOptions().getFileName()));
+
             ModelTexture texture = new ModelTexture();
             //  System.out.println("diffuseColor= "+diffuseColor);
             if(mtl.getMapKdOptions()!=null)
@@ -97,9 +91,8 @@ public class EntityService {
                 //texture = new ModelTexture(loader.loadTexture("res/11.png"));
                 texture.setColor(new Vector4f(diffuseColor.getX(), diffuseColor.getY(), diffuseColor.getZ(),1));
             // Установка переменных блеска
-            texture.setShineDamper(20);
-            texture.setReflectivity(0f);
-            //sendToRenderer(mtl, materialGroup);
+           // texture.setShineDamper(20);
+           // texture.setReflectivity(0f);
 
             TexturedModel staticModel = new TexturedModel(m2, texture);
 

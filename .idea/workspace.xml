@@ -4,21 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7855055d-dd5f-45de-b3d1-cf9b0f2a2ea4" name="Changes" comment="test git2">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/textuteSphere.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/EntityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/LandscapeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/PlayerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/LoaderModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/RandomCords.java" afterDir="false" />
+    <list default="true" id="7855055d-dd5f-45de-b3d1-cf9b0f2a2ea4" name="Changes" comment="refactorings">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/Range_Rover_Sport_OBJ/2016 Custom Range Rover Sport.obj" beforeDir="false" afterPath="$PROJECT_DIR$/res/Range_Rover_Sport_OBJ/2016 Custom Range Rover Sport.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/asphalt.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/LoaderLandscape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/LoaderLandscape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/LoaderPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/LoaderPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/UtilsLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/UtilsLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/render/OBJLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/render/OBJLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/EntityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/EntityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/LandscapeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/LandscapeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/PlayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/PlayerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/LoaderLandscape.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/LoaderModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/LoaderPlayer.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +38,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -53,21 +52,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/neket/IdeaProjects/scene/Scene-in-LwjGL/res",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/neket/IdeaProjects/scene/Scene-in-LwjGL/res&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/res" />
@@ -104,7 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701167441053</updated>
       <workItem from="1701167442487" duration="4878000" />
-      <workItem from="1701184063526" duration="22511000" />
+      <workItem from="1701184063526" duration="43853000" />
     </task>
     <task id="LOCAL-00001" summary="test git">
       <option name="closed" value="true" />
@@ -122,13 +121,36 @@
       <option name="project" value="LOCAL" />
       <updated>1701179234213</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="refactorings">
+      <option name="closed" value="true" />
+      <created>1701276987211</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701276987211</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/dev" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -142,17 +164,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test git" />
     <MESSAGE value="test git2" />
-    <option name="LAST_COMMIT_MESSAGE" value="test git2" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/utils/LoaderModel.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="refactorings" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactorings" />
   </component>
 </project>

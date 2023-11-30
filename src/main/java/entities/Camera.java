@@ -5,6 +5,8 @@ import io.Mouse;
 import org.joml.Vector3f;
 import org.lwjgl.glfw.GLFW;
 
+import java.util.List;
+
 /**
  * Класс симуляции камеры
  */
@@ -39,6 +41,19 @@ public class Camera {
         this.pitch = 30; // наклон камеры(верх-низ)
         this.yaw = 0; // поворот камеры вокруг
         this.roll = 0;
+    }
+
+    public Camera(List<Player> player) {
+        player.forEach(p->{
+            this.player = p; // привязываем к игроку
+            this.distanceFromPlayer = 50; // дистанция до игрока
+            this.angleAroundPlayer = 0; // угол поворота вокруг игрока
+            this.position = new Vector3f(100, 35, 40); // позиция
+            this.pitch = 30; // наклон камеры(верх-низ)
+            this.yaw = 0; // поворот камеры вокруг
+            this.roll = 0;
+
+        });
     }
     
     /**

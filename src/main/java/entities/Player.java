@@ -5,11 +5,13 @@ import models.TexturedModel;
 import org.joml.Vector3f;
 import render.DisplayManager;
 
+import java.util.List;
+
 import static org.lwjgl.glfw.GLFW.*;
 
 public class Player extends Entity {
     /** скорость передвижения */
-    private static final float RUN_SPEED = 20;
+    private static final float RUN_SPEED = 45;
     /** градусы в секунду */
     private static final float TURN_SPEED = 160;
 
@@ -21,6 +23,10 @@ public class Player extends Entity {
     public Player(TexturedModel model, Vector3f position, float rotationX, float rotationY, float rotationZ, float scale) {
         super(model, position, rotationX, rotationY, rotationZ, scale);
     }
+
+//    public Player(List<Entity> entity, Vector3f position, float rotationX, float rotationY, float rotationZ, float scale) {
+//        super(, position, rotationX, rotationY, rotationZ, scale);
+//    }
 
     /**
      * Движение игрока

@@ -3,7 +3,7 @@ package entities;
 import models.TexturedModel;
 import org.joml.Vector3f;
 
-public class Entity {
+public class Entity implements Cloneable {
 
     /** текстурированная модель */
     private TexturedModel model;
@@ -43,6 +43,12 @@ public class Entity {
         this.position.x += dx;
         this.position.y += dy;
         this.position.z += dz;
+    }
+
+    public void increasePosition(Vector3f cords) {
+        this.position.x += cords.x;
+        this.position.y += cords.y;
+        this.position.z += cords.z;
     }
 
     /**
@@ -103,6 +109,17 @@ public class Entity {
 
     public void setScale(float scale) {
         this.scale = scale;
+    }
+
+    @Override
+    public Entity clone() {
+        try {
+            Entity clone = (Entity) super.clone();
+            // TODO: copy mutable state here, so the clone can't change the internals of the original
+            return clone;
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
+        }
     }
 }
 

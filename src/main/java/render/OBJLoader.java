@@ -115,7 +115,6 @@ public class OBJLoader {
         for (int i = 0; i < indices.size(); i++) {
             indicesArray[i] = indices.get(i);
         }
-System.out.println(verticesArray.length);
         return loader.loadToVao(verticesArray, texturesArray, normalsArray, indicesArray);
     }
 
