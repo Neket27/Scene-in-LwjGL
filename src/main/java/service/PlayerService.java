@@ -57,7 +57,7 @@ public class PlayerService {
         ModelTexture texture3 = new ModelTexture(loader.loadTexture("res/tutorial18/white.png"));
         TexturedModel stanfordBunny = new TexturedModel(m3,texture3);
 
-       List<Entity> entity= entityService.createEntityWithMaterial(loader,pathObj,pathToMaterial,0,0,0,2.5f);
+       List<Entity> entity= entityService.createEntityWithMaterial(loader,pathObj,pathToMaterial,0,0,0,2.25f);
 
         List<Player>player= new ArrayList<>();
         entity.forEach(e->player.add(new Player(e.getModel(),e.getPosition(),e.getRotationX(),e.getRotationY(),e.getRotationZ(),e.getScale())));

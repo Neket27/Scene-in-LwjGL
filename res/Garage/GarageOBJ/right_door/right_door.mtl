@@ -1,0 +1,24 @@
+# Blender 4.0.1 MTL File: 'grage3.blend'
+# www.blender.org
+
+newmtl Material__37
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd mtl_4.tga
+map_Ks mtl_4_spec.tga
+map_Bump mtl_4_bamp.tga
+
+newmtl Material__40
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd mtl_6.tga
+map_Ks mtl_6_spec.tga
+map_Bump mtl_6_bamp.tga

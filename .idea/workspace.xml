@@ -4,19 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7855055d-dd5f-45de-b3d1-cf9b0f2a2ea4" name="Changes" comment="refactorings">
+    <list default="true" id="7855055d-dd5f-45de-b3d1-cf9b0f2a2ea4" name="Changes" comment="add loading player with material">
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/garage_without_door/briks_1.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/garage_without_door/briks_1_bump.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/garage_without_door/briks_1_spec.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/garage_without_door/creat_beton_2.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/garage_without_door/creat_beton_2_normal.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/garage_without_door/creat_beton_2_spec.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/garage_without_door/creat_beton_3.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/garage_without_door/creat_beton_3_normal.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/garage_without_door/creat_beton_3_spec.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/garage_without_door/garage_without_door.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/garage_without_door/garage_without_door.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/garage_without_door/mtl_1.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/garage_without_door/mtl_1_bamp.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/garage_without_door/mtl_1_spec.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/garage_without_door/mtl_5.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/garage_without_door/mtl_5_bamp.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/garage_without_door/mtl_5_spec.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/left_door/left_door.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/left_door/left_door.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/left_door/mtl_4.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/left_door/mtl_4_bamp.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/left_door/mtl_4_spec.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/left_door/mtl_6.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/left_door/mtl_6_bamp.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/left_door/mtl_6_spec.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/right_door/mtl_4.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/right_door/mtl_4_bamp.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/right_door/mtl_4_spec.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/right_door/mtl_6.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/right_door/mtl_6_bamp.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/right_door/mtl_6_spec.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/right_door/right_door.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/Garage/GarageOBJ/right_door/right_door.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/wate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/ОТУ_рассылка.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/LoaderLandscape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/LoaderModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/LoaderPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/render/OBJLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/render/OBJLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/EntityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/EntityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/LandscapeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/LandscapeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/PlayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/PlayerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/LoaderLandscape.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/LoaderModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/LoaderPlayer.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,23 +81,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/neket/IdeaProjects/scene/Scene-in-LwjGL/res&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/neket/IdeaProjects/scene/Scene-in-LwjGL/res/Garage/GarageOBJ",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/res/Garage/GarageOBJ" />
+      <recent name="$PROJECT_DIR$/res/Garage/GarageOBJ/left_door" />
       <recent name="$PROJECT_DIR$/res" />
       <recent name="$PROJECT_DIR$/res/Range_Rover_Sport_OBJ" />
       <recent name="$PROJECT_DIR$" />
@@ -103,7 +134,10 @@
       <option name="presentableId" value="Default" />
       <updated>1701167441053</updated>
       <workItem from="1701167442487" duration="4878000" />
-      <workItem from="1701184063526" duration="43853000" />
+      <workItem from="1701184063526" duration="44173000" />
+      <workItem from="1701544338116" duration="17000" />
+      <workItem from="1701587751704" duration="3249000" />
+      <workItem from="1701762043083" duration="40299000" />
     </task>
     <task id="LOCAL-00001" summary="test git">
       <option name="closed" value="true" />
@@ -129,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701276987211</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add loading player with material">
+      <option name="closed" value="true" />
+      <created>1701372711133</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701372711134</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +207,7 @@
     <MESSAGE value="test git" />
     <MESSAGE value="test git2" />
     <MESSAGE value="refactorings" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactorings" />
+    <MESSAGE value="add loading player with material" />
+    <option name="LAST_COMMIT_MESSAGE" value="add loading player with material" />
   </component>
 </project>

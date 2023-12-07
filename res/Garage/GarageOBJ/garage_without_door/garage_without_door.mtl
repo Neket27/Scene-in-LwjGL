@@ -1,0 +1,57 @@
+# Blender 4.0.1 MTL File: 'grage.blend'
+# www.blender.org
+
+newmtl Material__35
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd mtl_1.tga
+map_Ks mtl_1_spec.tga
+map_Bump mtl_1_bamp.tga
+
+newmtl Material__39
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd mtl_5.tga
+map_Ks mtl_5_spec.tga
+map_Bump mtl_5_bamp.tga
+
+newmtl Material__41
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd creat_beton_3.tga
+map_Ks creat_beton_3_normal.tga
+map_Bump creat_beton_3_spec.tga
+
+newmtl Material__42
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd creat_beton_2.tga
+map_Ks creat_beton_2_spec.tga
+map_Bump creat_beton_2_normal.tga
+
+newmtl Material__43
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd briks_1.tga
+map_Ks briks_1_spec.tga
+map_Bump briks_1_bump.tga

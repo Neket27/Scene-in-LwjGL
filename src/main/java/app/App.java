@@ -1,30 +1,25 @@
 package app;
 
-import de.javagl.obj.*;
 import entities.Camera;
 import entities.Entity;
 import entities.Light;
 import entities.Player;
-import models.TexturedModel;
+import io.Keyboard;
 import org.joml.Vector3f;
 import render.DisplayManager;
 import render.Loader;
 import render.MasterRenderer;
-import render.OBJLoader;
 import service.EntityService;
 import service.LandscapeService;
 import service.PlayerService;
 import terrains.Terrain;
-import textures.ModelTexture;
 import utils.RandomCords;
-import utils.UtilsLoader;
 
 import java.io.IOException;
-import java.nio.FloatBuffer;
-import java.nio.IntBuffer;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
+
+import static org.lwjgl.glfw.GLFW.*;
 
 public class App {
     public static void main(String[] args) throws IOException {
@@ -34,17 +29,39 @@ public class App {
         PlayerService playerService = new PlayerService();
 
         Loader loader = new Loader(); // загрузчик моделей
-        Terrain terrain = landscapeService.create(loader,0,-1,"res/whileFone.png","res/a3.png","res/yellow.png","res/tutorial21/heightmap.png","res/mapForautoDrom3.png");
-        Terrain terrain2 = landscapeService.create(loader,-1,-1,"res/whileFone.png","res/a3.png","res/yellow.png","res/tutorial21/heightmap.png","res/mapForautoDrom3.png");
+        Terrain terrain = landscapeService.create(loader,0,-1,"res/wate.png","res/a3.png","res/yellow.png","res/tutorial21/heightmap.png","res/mapForautoDrom3.png");
+        Terrain terrain2 = landscapeService.create(loader,-1,-1,"res/wate.png","res/a3.png","res/yellow.png","res/tutorial21/heightmap.png","res/mapForautoDrom3.png");
         //Player player = playerService.create(loader);
         List<Player> player =playerService.create(loader,"res/bugatti/bugatti.obj","res/bugatti");
         Camera camera = new Camera(player);
         MasterRenderer renderer = new MasterRenderer();
 
         List<Entity> entities = new ArrayList<>();
-        List <Entity> garage =entityService.createEntityWithMaterial(loader,"res/Garage/GarageOBJ/garage.obj","res/Garage/GarageOBJ",-100,0,-30,6);
+        List <Entity> garage =entityService.createEntityWithMaterial(loader,"res/Garage/GarageOBJ/garage_without_door/garage_without_door.obj","res/Garage/GarageOBJ/garage_without_door",-100,0,-30,6);
         garage.forEach(e->e.increaseRotation(0,140,0));
         entities.addAll(garage);
+
+        float x =0;
+        float y =0;
+        float z=0;
+        float x2=0;
+        float y2 =0;
+        float z2=0;
+        int pX=-100;
+        int pZ=-30;
+        float rY=140;
+        float ppX=-100;
+        float ppZ=-30;
+        float ppY=140;
+        List <Entity> garageLeftDoor =entityService.createEntityWithMaterial(loader,"res/Garage/GarageOBJ/left_door/left_door.obj","res/Garage/GarageOBJ/left_door",-100,0,-30,6);
+        garageLeftDoor.forEach(e->e.increaseRotation(0,140,0));
+        entities.addAll(garageLeftDoor);
+
+
+
+        List <Entity> garageRightDoor =entityService.createEntityWithMaterial(loader,"res/Garage/GarageOBJ/right_door/right_door.obj","res/Garage/GarageOBJ/right_door",-100,0,-30,6);
+        garageRightDoor.forEach(e->e.increaseRotation(0,140,0));
+        entities.addAll(garageRightDoor);
 
         List<Entity> house = entityService.createEntityWithMaterial(loader, "res/Bambo_House_obj/Bambo_House.obj", "res/Bambo_House_obj", -45, 0, -25, 5);
         house.forEach(e->{
@@ -54,7 +71,7 @@ public class App {
         });
 
         entities.addAll(house);
-        entities.addAll(entityService.createEntityWithMaterial(loader,"res/bugatti/bugatti.obj","res/bugatti",120,0,-30,2));
+       // entities.addAll(entityService.createEntityWithMaterial(loader,"res/bugatti/bugatti.obj","res/bugatti",120,0,-30,2));
         entities.addAll(entityService.createEntityWithMaterial(loader,"res/Range_Rover_Sport_OBJ/2016 Custom Range Rover Sport.obj","res/Range_Rover_Sport_OBJ",-75,1,-60,6));
 
         // создание источника света
@@ -104,6 +121,8 @@ public class App {
 
                  }
 
+
+
         // запускаем цикл пока пользователь не закроет окно
         while (DisplayManager.shouldDisplayClose()) {
             camera.move(); // двигаем камеру
@@ -112,6 +131,46 @@ public class App {
                 p.move();// двигаем игрока
                 renderer.processEntity(p); // рисуем игрока
             });
+
+
+            rotationLeftDoor(garageLeftDoor);
+
+
+            if (Keyboard.isKeyDown(GLFW_KEY_I)   ) {
+                x+= 0.1F;
+                System.out.println(x+" "+y+" "+z);
+            } else if (Keyboard.isKeyDown(GLFW_KEY_O)) {
+                y+= 0.1F;
+                System.out.println(x+" "+y+" "+z);
+            } else if (Keyboard.isKeyDown(GLFW_KEY_P)) {
+                z+= 0.1F;
+                System.out.println(x+" "+y+" "+z);
+            }
+
+            if (Keyboard.isKeyDown(GLFW_KEY_J) ) {
+                x+= -0.1;
+                System.out.println(x+" "+y+" "+z);
+            } else if (Keyboard.isKeyDown(GLFW_KEY_K)) {
+                y+= -0.1;
+                System.out.println(x+" "+y+" "+z);
+            } else if (Keyboard.isKeyDown(GLFW_KEY_L)) {
+                z+= -0.1;
+                System.out.println(x+" "+y+" "+z);
+            }
+
+
+for (Entity entity:garageRightDoor){
+    entity.increasePosition(x,0,z);
+    entity.increaseRotation(0,y,0);
+}
+            ppX+=x;
+            ppZ+=z;
+            ppY+=y;
+            System.out.println("позиция: "+"X="+(ppX)+"Z="+(ppZ)+"Градусы= "+(ppY));
+            //rotationRightDoor(garageRightDoor);
+            x=0;y=0;z=0;
+             rotationRightDoor(garageRightDoor);
+
 
             // рисуем объекты
             renderer.processTerrain(terrain);
@@ -127,5 +186,33 @@ public class App {
         loader.cleanUp(); // очищаем память от загруженной модели
         DisplayManager.closeDisplay();
     }
+
+
+
+    static  void rotationLeftDoor(List<Entity> entities){
+        if (Keyboard.isKeyDown(GLFW_KEY_N) ) {
+            for (Entity entity: entities) {
+                entity.setRotationY(51);
+            }
+            for (Entity entity: entities) {
+                entity.setPosition(new Vector3f(-87,0,-61));
+            }
+
+        }
+        }
+
+
+    static void rotationRightDoor(List<Entity> entities){
+        if(Keyboard.isKeyDown(GLFW_KEY_M)){
+            for (Entity entity: entities) {
+                entity.setRotationY(228.4f);
+            }
+            for (Entity entity: entities) {
+                entity.setPosition(new Vector3f(-71.4f,0,-47.6f));
+            }
+        }
+
+    }
+
 
 }
