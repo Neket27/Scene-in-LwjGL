@@ -30,44 +30,39 @@ public class App {
 
         Loader loader = new Loader(); // загрузчик моделей
         Terrain terrain = landscapeService.create(loader,0,-1,"res/wate.png","res/a3.png","res/pesok-peschinki-plyazh-pustynya.png","res/tutorial21/heightmap.png","res/mapForautoDrom3.png");
-        Terrain terrain2 = landscapeService.create(loader,-1,-1,"res/wate.png","res/a3.png","res/pesok-peschinki-plyazh-pustynya.png","res/tutorial21/heightmap.png","res/mapForautoDrom3.png");
+        Terrain terrain2 = landscapeService.create(loader,-1,-1,"res/grass.png","res/wate.png","res/pesok-peschinki-plyazh-pustynya.png","res/asphalt-1-2.png","res/mapForautoDrom4.png");
         //Player player = playerService.create(loader);
         List<Player> player =playerService.create(loader,"res/bugatti/bugatti.obj","res/bugatti");
+        player.forEach(p->p.setPosition(new Vector3f(-220f,0f,-650f)));
+        player.forEach(p->p.increaseRotation(0,200,0));
         Camera camera = new Camera(player);
         MasterRenderer renderer = new MasterRenderer();
 
         List<Entity> entities = new ArrayList<>();
-        List <Entity> garage =entityService.createEntityWithMaterial(loader,"res/Garage/GarageOBJ/garage_without_door/garage_without_door.obj","res/Garage/GarageOBJ/garage_without_door",-100,0,-30,6,1,0,false,false);
-        garage.forEach(e->e.increaseRotation(0,140,0));
+        List <Entity> garage =entityService.createEntityWithMaterial(loader,"res/Garage/GarageOBJ/garage_without_door/garage_without_door.obj","res/Garage/GarageOBJ/garage_without_door",-220,0,-650,6,1,0,false,false);
+        garage.forEach(e->e.increaseRotation(0,30,0));
         entities.addAll(garage);
 
         float x =0;
         float y =0;
         float z=0;
-        float x2=0;
-        float y2 =0;
-        float z2=0;
-        int pX=-100;
-        int pZ=-30;
-        float rY=140;
+
         float ppX=-100;
         float ppZ=-30;
         float ppY=140;
-        boolean pushOpenLeftDoor=true;
-        boolean pushOpenRightDoor=true;
 
 
-        List <Entity> garageLeftDoor =entityService.createEntityWithMaterial(loader,"res/Garage/GarageOBJ/left_door/left_door.obj","res/Garage/GarageOBJ/left_door",-100,0,-30,6,1,0,false,false);
-        garageLeftDoor.forEach(e->e.increaseRotation(0,140,0));
+        List <Entity> garageLeftDoor =entityService.createEntityWithMaterial(loader,"res/Garage/GarageOBJ/left_door/left_door.obj","res/Garage/GarageOBJ/left_door",-220,0,-650,6,1,0,false,false);
+        garageLeftDoor.forEach(e->e.increaseRotation(0,30,0));
         entities.addAll(garageLeftDoor);
 
 
 
-        List <Entity> garageRightDoor =entityService.createEntityWithMaterial(loader,"res/Garage/GarageOBJ/right_door/right_door.obj","res/Garage/GarageOBJ/right_door",-100,0,-30,6,1,0,false,false);
-        garageRightDoor.forEach(e->e.increaseRotation(0,140,0));
+        List <Entity> garageRightDoor =entityService.createEntityWithMaterial(loader,"res/Garage/GarageOBJ/right_door/right_door.obj","res/Garage/GarageOBJ/right_door",-220,0,-650,6,1,0,false,false);
+        garageRightDoor.forEach(e->e.increaseRotation(0,30,0));
         entities.addAll(garageRightDoor);
 
-        List<Entity> house = entityService.createEntityWithMaterial(loader, "res/Bambo_House_obj/Bambo_House.obj", "res/Bambo_House_obj", -45, 0, -25, 5,1,0,false,false);
+        List<Entity> house = entityService.createEntityWithMaterial(loader, "res/Bambo_House_obj/Bambo_House.obj", "res/Bambo_House_obj", -195, 0, -460, 5,1,0,false,false);
         house.forEach(e->{
             e.getModel().getTexture().setUseFakeLighting(true);
             e.getModel().getTexture().setReflectivity(0.1f);
@@ -76,7 +71,7 @@ public class App {
 
         entities.addAll(house);
        // entities.addAll(entityService.createEntityWithMaterial(loader,"res/bugatti/bugatti.obj","res/bugatti",120,0,-30,2));
-        entities.addAll(entityService.createEntityWithMaterial(loader,"res/Range_Rover_Sport_OBJ/2016 Custom Range Rover Sport.obj","res/Range_Rover_Sport_OBJ",-75,1,-60,6,1,0,false,false));
+        entities.addAll(entityService.createEntityWithMaterial(loader,"res/Range_Rover_Sport_OBJ/2016 Custom Range Rover Sport.obj","res/Range_Rover_Sport_OBJ",-180,1,-700,6,1,0,false,false));
        // entities.add(entityService.createEntityWithTexture(loader,"res/cube2/cube.obj","res/cube/mikepanskyboxtextures/dayfair.jpg",true,true,new Vector3f(0,10,100), 0, 0, 0, 30));
         entities.addAll(entityService.createEntityWithMaterial(loader,"res/sphere/sphere.obj","res/sphere",100,100,-100,0,0,0,20000,1,1.0f,true,true));
         // создание источника света
@@ -135,6 +130,7 @@ public class App {
         boolean doOpenLeftDoor=false;
         float incX=0;
         float incZ=0;
+        float incY=0;
 
         // запускаем цикл пока пользователь не закроет окно
         while (DisplayManager.shouldDisplayClose()) {
@@ -152,6 +148,7 @@ public class App {
                 System.out.println(x+" "+y+" "+z);
             } else if (Keyboard.isKeyDown(GLFW_KEY_O)) {
                 y+= 0.1F;
+                incY+=0.1f;
                 System.out.println(x+" "+y+" "+z);
             } else if (Keyboard.isKeyDown(GLFW_KEY_P)) {
                 z+= 0.1F;
@@ -165,6 +162,7 @@ public class App {
                 System.out.println(x+" "+y+" "+z);
             } else if (Keyboard.isKeyDown(GLFW_KEY_K)) {
                 y+= -0.1;
+                incY-=0.1f;
                 System.out.println(x+" "+y+" "+z);
             } else if (Keyboard.isKeyDown(GLFW_KEY_L)) {
                 z+= -0.1;
@@ -173,7 +171,7 @@ public class App {
             }
 
 
-for (Entity entity:garageLeftDoor){
+for (Entity entity:garageRightDoor){
     entity.increasePosition(x,0,z);
     entity.increaseRotation(0,y,0);
 }
@@ -222,7 +220,7 @@ for (Entity entity:garageLeftDoor){
           //  System.out.println("M= "+ Keyboard.isKeyDown(GLFW_KEY_M));
             //System.out.println("rightDoorOpen= "+ rightDoorOpen);
             System.out.println("position= "+ garageRightDoor.get(garageRightDoor.size()-1).getPosition().toString());
-            System.out.println("inc="+incX+" "+incZ);
+            System.out.println("inc="+incX+" "+incZ+" Градусы= "+incY);
 
             // рисуем объекты
             renderer.processTerrain(terrain);
@@ -245,19 +243,19 @@ for (Entity entity:garageLeftDoor){
         if(pushOpenLeftDoor){
             for (Entity entity: entities) {
                 // entity.setRotationY(228.4f);
-                entity.increaseRotation(0,-89,0);
+                entity.increaseRotation(0,-91,0);
             }
             for (Entity entity: entities) {
-                entity.increasePosition(new Vector3f(12.7f,0,-30.6f));
+                entity.increasePosition(new Vector3f(24.6f,0,22.7f));
             }
         }
         else {
             for (Entity entity: entities) {
                 // entity.setRotationY(228.4f);
-                entity.increaseRotation(0,89,0);
+                entity.increaseRotation(0,91,0);
             }
             for (Entity entity: entities) {
-                entity.increasePosition(new Vector3f(-12.7f,0,30.6f));
+                entity.increasePosition(new Vector3f(-24.6f,0,-22.7f));
             }
         }
         }
@@ -267,19 +265,19 @@ for (Entity entity:garageLeftDoor){
         if(pushOpenRightDoor){
             for (Entity entity: entities) {
                // entity.setRotationY(228.4f);
-                entity.increaseRotation(0,88,0);
+                entity.increaseRotation(0,90,0);
             }
             for (Entity entity: entities) {
-                entity.increasePosition(new Vector3f(28.5f,0,-17.9f));
+                entity.increasePosition(new Vector3f(6.8f,0,33.0f));
             }
         }
         else {
             for (Entity entity: entities) {
                 // entity.setRotationY(228.4f);
-                entity.increaseRotation(0,-88,0);
+                entity.increaseRotation(0,-90,0);
             }
             for (Entity entity: entities) {
-                entity.increasePosition(new Vector3f(-28.5f,0,17.9f));
+                entity.increasePosition(new Vector3f(-6.8f,0,-33.0f));
             }
         }
 
