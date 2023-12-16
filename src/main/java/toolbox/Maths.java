@@ -48,7 +48,7 @@ public class Maths {
         Vector3f cameraPos = camera.getPosition();
         Vector3f negativeCameraPos = new Vector3f(-cameraPos.x, -cameraPos.y, -cameraPos.z);
         viewMatrix.translate(negativeCameraPos);
-
+      //  viewMatrix.perspective((float) Math.toRadians(30),1,0.1f,10.0f);
         return viewMatrix;
     }
 }

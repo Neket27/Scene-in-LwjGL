@@ -35,19 +35,19 @@ public class EntityService {
         return  new Entity(texturedModel,cords,rotationX,rotationY,rotationZ,scale);
     }
 
-    public   List<Entity> createEntityWithMaterial(Loader loader, String objPath, String folderPathWithTexture, Vector3f cords) throws IOException {
-        return createEntityWithMaterial( loader,objPath,folderPathWithTexture,(int)cords.x,(int)cords.y,(int)cords.z,0,0,0,1);
+    public   List<Entity> createEntityWithMaterial(Loader loader, String objPath, String folderPathWithTexture, Vector3f cords,float shineDamper,float reflectivity,boolean hasTransparency,boolean useFakeLighting) throws IOException {
+        return createEntityWithMaterial( loader,objPath,folderPathWithTexture,(int)cords.x,(int)cords.y,(int)cords.z,0,0,0,1,shineDamper,reflectivity,hasTransparency,useFakeLighting);
     }
 
-    public   List<Entity> createEntityWithMaterial(Loader loader, String objPath, String folderPathWithTexture, int x,int y, int z) throws IOException {
-        return createEntityWithMaterial( loader,objPath,folderPathWithTexture,x,y,z,0,0,0,1);
+    public   List<Entity> createEntityWithMaterial(Loader loader, String objPath, String folderPathWithTexture, int x,int y, int z,float shineDamper,float reflectivity,boolean hasTransparency,boolean useFakeLighting) throws IOException {
+        return createEntityWithMaterial( loader,objPath,folderPathWithTexture,x,y,z,0,0,0,1,shineDamper,reflectivity,hasTransparency,useFakeLighting);
     }
 
-    public   List<Entity> createEntityWithMaterial(Loader loader, String objPath, String folderPathWithTexture, int x,int y, int z, float scale) throws IOException {
-        return createEntityWithMaterial( loader,objPath,folderPathWithTexture,x,y,z,0,0,0,scale);
+    public   List<Entity> createEntityWithMaterial(Loader loader, String objPath, String folderPathWithTexture, int x,int y, int z, float scale,float shineDamper,float reflectivity,boolean hasTransparency,boolean useFakeLighting) throws IOException {
+        return createEntityWithMaterial( loader,objPath,folderPathWithTexture,x,y,z,0,0,0,scale,shineDamper,reflectivity,hasTransparency,useFakeLighting);
     }
 
-    public   List<Entity> createEntityWithMaterial(Loader loader, String objPath, String folderPathWithTexture, int x,int y, int z, float rotationX, float rotationY, float rotationZ, float scale) throws IOException {
+    public   List<Entity> createEntityWithMaterial(Loader loader, String objPath, String folderPathWithTexture, int x,int y, int z, float rotationX, float rotationY, float rotationZ, float scale, float shineDamper,float reflectivity,boolean hasTransparency,boolean useFakeLighting) throws IOException {
         List<Entity> entities =new ArrayList<>();
         InputStream objInputStream = new FileInputStream(objPath);
         Obj obj = ObjReader.read(objInputStream);
@@ -91,8 +91,10 @@ public class EntityService {
                 //texture = new ModelTexture(loader.loadTexture("res/11.png"));
                 texture.setColor(new Vector4f(diffuseColor.getX(), diffuseColor.getY(), diffuseColor.getZ(),1));
             // Установка переменных блеска
-           // texture.setShineDamper(20);
-           // texture.setReflectivity(0f);
+            texture.setShineDamper(shineDamper);
+            texture.setReflectivity(reflectivity);
+            texture.setHasTransparency(hasTransparency);
+            texture.setUseFakeLighting(useFakeLighting);
 
             TexturedModel staticModel = new TexturedModel(m2, texture);
 

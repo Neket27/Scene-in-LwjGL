@@ -1,6 +1,7 @@
 package entities;
 
 import io.Keyboard;
+import io.KeyboardRelease;
 import models.TexturedModel;
 import org.joml.Vector3f;
 import render.DisplayManager;
@@ -53,7 +54,7 @@ public class Player extends Entity {
         // Движение вперед и назад
         if (Keyboard.isKeyDown(GLFW_KEY_W) || Keyboard.isKeyDown(GLFW_KEY_UP)) {
             currentSpeed = RUN_SPEED;
-        } else if (Keyboard.isKeyDown(GLFW_KEY_S) || Keyboard.isKeyDown(GLFW_KEY_DOWN)) {
+        } else if (Keyboard.isKeyDown(GLFW_KEY_S) || KeyboardRelease.isKeyDown(GLFW_KEY_DOWN)) {
             currentSpeed = -RUN_SPEED;
         } else {
             currentSpeed = 0;

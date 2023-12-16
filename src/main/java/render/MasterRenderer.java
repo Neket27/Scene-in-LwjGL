@@ -18,11 +18,11 @@ import java.util.Map;
 public class MasterRenderer {
     
     /** Поле зрения: Угол поля зрения в радианах */
-    private static final float FOV = (float) Math.toRadians(60.0f);    
+    private static final float FOV = (float) Math.toRadians(60.0f);
     /** Расстояние до ближней плоскости */
     private static final float Z_NEAR = 0.01f;    
     /** Расстояние до дальней плоскости */
-    private static final float Z_FAR = 1000.f;
+    private static final float Z_FAR = 30000.f;
     /** Матрица проэкции */
     private Matrix4f projectionMatrix;
 
