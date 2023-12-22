@@ -5,151 +5,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7855055d-dd5f-45de-b3d1-cf9b0f2a2ea4" name="Changes" comment="update_mapForautoDrom4">
-      <change afterPath="$PROJECT_DIR$/res/asphalt-1-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/sphere/sphere.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/DarkeningOfSky/DarkeningOfSky.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/openDoor/OpenDoor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/00_MyCust_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/00_TaME_Bronze02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/00_TaME_MetalBrushedDark01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Arch_Element_DoorImage01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/BlueRidge.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Concrete_Salt.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Copper01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Dried_Bamboo_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Fencing_Diamond_Mesh3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Groundcover_Gravel.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/H1424_ST22.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/H1615_ST9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/ILCampo-SantaFe-I.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Material3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Metal_Brass_Ceiling_Squares.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Metal_BrushedDark01a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Metal_Corrogated_Shiny.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Roofing_Shingles_Wood.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/SUC_Floor_004.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/SUC_Floor_023.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Stone_Flagstone_Ashlar.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Stone_Tile_Squares1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Stone_Vein_Small.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Texture_Stucco36.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Tile_Border_Travertine.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Tile_Diamond_Marble.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Tile_Granite_Multi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Tile_Granite_MultiBrown2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Tile_Radial_Gray.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Translucent_Glass_Safety.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Vegetation_IcePlant_Flower.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Vegetation_Impatiens_Pink.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Vegetation_Impatiens_Red.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Vegetation_Ivy_Hedera.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Vegetation_Lobelia.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Vegetation_Pansies.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Vegetation_Spirea.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Vegetation_Variegated1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Water_Pool_Light.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/Wood_Grain_Light3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/stainedglass05.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/stainedglass12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/House01_Textures/suc-grass-009.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/simpleSample.mtl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/simpleSample.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/simpleSample_written.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/2016 Custom Range Rover Sport.mtl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/a1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/a2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/a3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cactus/107466_open3dmodel.com/10436_Cactus_v1_L3.123ce67a3113-eb68-4881-a89e-34941294e48f/10436_Cactus_v1_Diffuse.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cactus/107466_open3dmodel.com/10436_Cactus_v1_L3.123ce67a3113-eb68-4881-a89e-34941294e48f/10436_Cactus_v1_max2010_it2.mtl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cactus/107466_open3dmodel.com/10436_Cactus_v1_L3.123ce67a3113-eb68-4881-a89e-34941294e48f/10436_Cactus_v1_max2010_it2.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/cube.mtl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/cube.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/cube_textute1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/materials/materials/skybox/blue_sunsetbk.vmt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/materials/materials/skybox/blue_sunsetbk.vtf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/materials/materials/skybox/blue_sunsetdn.vmt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/materials/materials/skybox/blue_sunsetdn.vtf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/materials/materials/skybox/blue_sunsetft.vmt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/materials/materials/skybox/blue_sunsetft.vtf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/materials/materials/skybox/blue_sunsetlf.vmt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/materials/materials/skybox/blue_sunsetlf.vtf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/materials/materials/skybox/blue_sunsetrt.vmt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/materials/materials/skybox/blue_sunsetrt.vtf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/materials/materials/skybox/blue_sunsetup.vmt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/materials/materials/skybox/blue_sunsetup.vtf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/mikepanskyboxtextures/01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/mikepanskyboxtextures/02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/mikepanskyboxtextures/dayclear.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/mikepanskyboxtextures/daycloudy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/mikepanskyboxtextures/dayfair.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/res/sphere/dayfair.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/mikepanskyboxtextures/dayfoggy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/mikepanskyboxtextures/dayovercast.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/mikepanskyboxtextures/daystormy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/mikepanskyboxtextures/duskclear.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/mikepanskyboxtextures/duskclear2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/mikepanskyboxtextures/duskcloudy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/mikepanskyboxtextures/duskcontrast.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/mikepanskyboxtextures/duskfair.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/mikepanskyboxtextures/duskfair2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/mikepanskyboxtextures/duskstormy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/mikepanskyboxtextures/light.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube/mikepanskyboxtextures/night.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube2/cube.mtl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube2/cube.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube2/dayfair.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube3/cube2.mtl" beforeDir="false" afterPath="$PROJECT_DIR$/res/sphere/sphere.mtl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube3/cube2.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube3/dayfair.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube4/cube4.mtl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube4/cube4.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/cube4/pngegg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/grassFlowers.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/mapForautoDrom.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/mapForautoDrom2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/mapForautoDrom3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/t1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/t2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/textuteSphere.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial06/image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial10/stall.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial10/stallTexture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial11/dragon.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial11/dragon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial13/box.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial13/box.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial14/grass.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial14/grassFlowers.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial14/tree.obj" beforeDir="false" afterPath="$PROJECT_DIR$/res/grass/tree.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial14/tree.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/grass/tree.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial15/fern.obj" beforeDir="false" afterPath="$PROJECT_DIR$/res/grass/fern.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial15/fern.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/grass/fern.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial15/grassModel.obj" beforeDir="false" afterPath="$PROJECT_DIR$/res/grass/grassModel.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial15/grassTexture.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/grass/grassTexture.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial15/tree.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial15/tree.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial17/blendMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial17/flower.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial17/grassFlowers.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial17/grassy2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial17/lowPolyTree.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial17/lowPolyTree.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial17/mud.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial17/path.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial18/stanfordBunny.obj" beforeDir="false" afterPath="$PROJECT_DIR$/res/stanfordBunny.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial18/white.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/white.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tutorial21/heightmap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/yellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/ОТУ_рассылка.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audi/3D Models/Audi_R8_2017.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audi/3D Models/Audi_R8_2017.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audi/3D Models/Audi_R8_2017.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audi/3D Models/Audi_R8_2017.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audi/3D Models/Audi_R8_2017.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audi/3D Models/Audi_R8_2017.stl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audi/3D Models/Audi_R8_20172.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audi/Renders/Audi_R8_2017.1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audi/Renders/Audi_R8_2017.100001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audi/Renders/Audi_R8_2017.110001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audi/Renders/Audi_R8_2017.2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audi/Renders/Audi_R8_2017.5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audi/Renders/Audi_R8_2017.9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audi/Renders/Audi_R8_2017.9black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audi/Textures/39034792-automobile-braking-system-aeration-steel-brake-disk-with-perforation-and-red-six-pistons-calipers-an.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audi/Textures/Car.Brake-Disk.BMP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audi/Textures/NumernSchildAudiR8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audi/Textures/Tyre.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audi_R8_2017.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Audi_R8_2017.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Car/Car/Car.obj/car.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Car/Car/Car.obj/car.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/Beige.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/Jade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/M_47in_TV_Front.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/M_47in_TV_Front1_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/M_47in_TV_Front2_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/M_59_4_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/M_59_4_1_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/M_59_4_2_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/Metal_Corrogated_Shiny.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/Side.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/White_Tiger__10_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/Wood__Floor.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/e60m5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/grill.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/ntkuw5kj.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Car/Car/Car.obj/car/nuvi_screenshot.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/Porsche_911_GT2.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/garage2020.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/rangeRower/Models/1.3DS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/rangeRower/Models/1.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/rangeRower/Models/1.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/rangeRower/Models/2010071618474806235.max" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/rangeRower/Models/20140328044852950137.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/rangeRower/Models/20140328044852950139.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/rangeRower/Models/20140328044852950403.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/rangeRower/Models/20140328044852950612.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/rangeRower/Models/20140328044852951634.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/rangeRower/Models/bumpbee.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/rangeRower/Models/chrbump.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/rangeRower/Models/grillbumps.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/rangeRower/Models/orange.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/rangeRower/Models/rover-logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/rangeRower/Models/rover-red.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/rangeRower/Models/tablica.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/rangeRower/Models/tire.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/whileFone.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/Keyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/Keyboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/PlayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/PlayerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/LoaderLandscape.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/LoaderModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/LoaderPlayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/UtilsLoader.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,6 +168,7 @@
       <workItem from="1703071739475" duration="508000" />
       <workItem from="1703063893052" duration="1885000" />
       <workItem from="1703269980128" duration="7648000" />
+      <workItem from="1703278603795" duration="914000" />
     </task>
     <task id="LOCAL-00001" summary="test git">
       <option name="closed" value="true" />
